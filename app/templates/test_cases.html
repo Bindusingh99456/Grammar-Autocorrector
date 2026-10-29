@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+
+{% block title %}Test Cases - Grammar Autocorrector{% endblock %}
+
+{% block content %}
+<h1>Report Test Cases</h1>
+<p class="lead">These 8 benchmark test cases are evaluated in my project report to test subject-verb agreement, auxiliary verbs, and article selection.</p>
+
+<div class="table-responsive">
+    <table class="data-table" aria-label="Table of 8 Benchmark Test Cases">
+        <thead>
+            <tr>
+                <th style="width: 50px;">#</th>
+                <th>Input Sentence</th>
+                <th>Expected Correction</th>
+                <th>Rule Applied</th>
+                <th style="width: 100px;">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>1</strong></td>
+                <td><code>She go to college every day.</code></td>
+                <td>She goes to college every day.</td>
+                <td><span class="badge">subject_verb_agreement</span> (he/she/it + base verb)</td>
+                <td>
+                    <form method="POST" action="/correct">
+                        <input type="hidden" name="text" value="She go to college every day.">
+                        <button type="submit" class="btn btn-secondary" aria-label="Run test case 1: She go to college every day.">Run it</button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>2</strong></td>
+                <td><code>He eat an apple.</code></td>
+                <td>He eats an apple.</td>
+                <td><span class="badge">subject_verb_agreement</span> (he/she/it + base verb)</td>
+                <td>
+                    <form method="POST" action="/correct">
+                        <input type="hidden" name="text" value="He eat an apple.">
+                        <button type="submit" class="btn btn-secondary" aria-label="Run test case 2: He eat an apple.">Run it</button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>3</strong></td>
+                <td><code>They goes to school.</code></td>
+                <td>They go to school.</td>
+                <td><span class="badge">subject_verb_agreement</span> (I/you/we/they + 3rd person)</td>
+                <td>
+                    <form method="POST" action="/correct">
+                        <input type="hidden" name="text" value="They goes to school.">
+                        <button type="submit" class="btn btn-secondary" aria-label="Run test case 3: They goes to school.">Run it</button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>4</strong></td>
+                <td><code>She are my friend.</code></td>
+                <td>She is my friend.</td>
+                <td><span class="badge">is_are</span> (singular pronoun with "are")</td>
+                <td>
+                    <form method="POST" action="/correct">
+                        <input type="hidden" name="text" value="She are my friend.">
+                        <button type="submit" class="btn btn-secondary" aria-label="Run test case 4: She are my friend.">Run it</button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>5</strong></td>
+                <td><code>They is playing football.</code></td>
+                <td>They are playing football.</td>
+                <td><span class="badge">is_are</span> (plural pronoun with "is")</td>
+                <td>
+                    <form method="POST" action="/correct">
+                        <input type="hidden" name="text" value="They is playing football.">
+                        <button type="submit" class="btn btn-secondary" aria-label="Run test case 5: They is playing football.">Run it</button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>6</strong></td>
+                <td><code>He have a car.</code></td>
+                <td>He has a car.</td>
+                <td><span class="badge">has_have</span> (3rd person singular with "have")</td>
+                <td>
+                    <form method="POST" action="/correct">
+                        <input type="hidden" name="text" value="He have a car.">
+                        <button type="submit" class="btn btn-secondary" aria-label="Run test case 6: He have a car.">Run it</button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>7</strong></td>
+                <td><code>I has a book.</code></td>
+                <td>I have a book.</td>
+                <td><span class="badge">has_have</span> (1st person singular with "has")</td>
+                <td>
+                    <form method="POST" action="/correct">
+                        <input type="hidden" name="text" value="I has a book.">
+                        <button type="submit" class="btn btn-secondary" aria-label="Run test case 7: I has a book.">Run it</button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>8</strong></td>
+                <td><code>She is a engineer.</code></td>
+                <td>She is an engineer.</td>
+                <td><span class="badge">a_an</span> (article before vowel sound)</td>
+                <td>
+                    <form method="POST" action="/correct">
+                        <input type="hidden" name="text" value="She is a engineer.">
+                        <button type="submit" class="btn btn-secondary" aria-label="Run test case 8: She is a engineer.">Run it</button>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div style="margin-top: 24px; padding: 16px; background-color: #ffffff; border: 1px solid var(--border-color); border-radius: 6px;">
+    <h3 style="font-size: 1.05rem; margin-bottom: 6px; color: var(--navy-primary);">About These Test Cases</h3>
+    <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5;">
+        These sentences cover the core error categories addressed by the rule-based component of the hybrid system. Clicking "Run it" submits the text to the editor route, verifying that each rule correctly detects the violation, applies morphological inflection, and presents the inline diff.
+    </p>
+</div>
+{% endblock %}

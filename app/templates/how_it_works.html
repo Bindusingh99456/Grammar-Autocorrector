@@ -1,0 +1,166 @@
+{% extends "base.html" %}
+
+{% block title %}How It Works - Grammar Autocorrector{% endblock %}
+
+{% block content %}
+<h1>How It Works</h1>
+<p class="lead">An explanation of the 8-step Natural Language Processing pipeline developed for this project, combining deterministic linguistic rules with sequence-to-sequence model correction.</p>
+
+<section class="pipeline-card" aria-labelledby="pipeline-heading">
+    <h2 id="pipeline-heading">The 8-Step Processing Pipeline</h2>
+    <p style="margin-bottom: 16px; color: var(--text-muted); font-size: 0.95rem;">
+        The system processes input sentences sequentially through eight discrete NLP stages to detect and fix grammatical errors:
+    </p>
+
+    <!-- Inline SVG Pipeline Flowchart -->
+    <div class="pipeline-diagram" role="img" aria-label="8-Step Grammar Autocorrector Processing Pipeline Diagram">
+        <svg viewBox="0 0 880 200" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+            <!-- Step 1: Input -->
+            <rect x="10" y="20" width="95" height="60" rx="4" fill="#0e2240" stroke="#0e2240" />
+            <text x="57" y="44" fill="#ffffff" font-size="11" font-weight="600" text-anchor="middle">1. Input</text>
+            <text x="57" y="60" fill="#cbd5e1" font-size="9" text-anchor="middle">Raw Text</text>
+
+            <!-- Arrow 1 -> 2 -->
+            <line x1="105" y1="50" x2="120" y2="50" stroke="#d9531e" stroke-width="2" marker-end="url(#arrow)" />
+
+            <!-- Step 2: Preprocess -->
+            <rect x="120" y="20" width="95" height="60" rx="4" fill="#ffffff" stroke="#0e2240" stroke-width="1.5" />
+            <text x="167" y="44" fill="#0e2240" font-size="11" font-weight="600" text-anchor="middle">2. Clean</text>
+            <text x="167" y="60" fill="#64748b" font-size="9" text-anchor="middle">Regex / Spaces</text>
+
+            <!-- Arrow 2 -> 3 -->
+            <line x1="215" y1="50" x2="230" y2="50" stroke="#d9531e" stroke-width="2" />
+
+            <!-- Step 3: Tokenize -->
+            <rect x="230" y="20" width="95" height="60" rx="4" fill="#ffffff" stroke="#0e2240" stroke-width="1.5" />
+            <text x="277" y="44" fill="#0e2240" font-size="11" font-weight="600" text-anchor="middle">3. Tokenize</text>
+            <text x="277" y="60" fill="#64748b" font-size="9" text-anchor="middle">NLTK Words</text>
+
+            <!-- Arrow 3 -> 4 -->
+            <line x1="325" y1="50" x2="340" y2="50" stroke="#d9531e" stroke-width="2" />
+
+            <!-- Step 4: POS Tag -->
+            <rect x="340" y="20" width="95" height="60" rx="4" fill="#ffffff" stroke="#0e2240" stroke-width="1.5" />
+            <text x="387" y="44" fill="#0e2240" font-size="11" font-weight="600" text-anchor="middle">4. POS Tag</text>
+            <text x="387" y="60" fill="#64748b" font-size="9" text-anchor="middle">NLTK Tagger</text>
+
+            <!-- Arrow 4 -> 5 (Turns to row 2) -->
+            <line x1="435" y1="50" x2="455" y2="50" stroke="#d9531e" stroke-width="2" />
+            <line x1="455" y1="50" x2="455" y2="140" stroke="#d9531e" stroke-width="2" />
+            <line x1="455" y1="140" x2="435" y2="140" stroke="#d9531e" stroke-width="2" />
+
+            <!-- Step 5: Analysis -->
+            <rect x="340" y="110" width="95" height="60" rx="4" fill="#ffffff" stroke="#0e2240" stroke-width="1.5" />
+            <text x="387" y="134" fill="#0e2240" font-size="11" font-weight="600" text-anchor="middle">5. Context</text>
+            <text x="387" y="150" fill="#64748b" font-size="9" text-anchor="middle">Subject/Verb/Sound</text>
+
+            <!-- Arrow 5 -> 6 -->
+            <line x1="340" y1="140" x2="325" y2="140" stroke="#d9531e" stroke-width="2" />
+
+            <!-- Step 6: Detect -->
+            <rect x="230" y="110" width="95" height="60" rx="4" fill="#ffffff" stroke="#0e2240" stroke-width="1.5" />
+            <text x="277" y="134" fill="#0e2240" font-size="11" font-weight="600" text-anchor="middle">6. Detect</text>
+            <text x="277" y="150" fill="#64748b" font-size="9" text-anchor="middle">Rule Violations</text>
+
+            <!-- Arrow 6 -> 7 -->
+            <line x1="230" y1="140" x2="215" y2="140" stroke="#d9531e" stroke-width="2" />
+
+            <!-- Step 7: Correct -->
+            <rect x="120" y="110" width="95" height="60" rx="4" fill="#ffffff" stroke="#d9531e" stroke-width="1.5" />
+            <text x="167" y="134" fill="#d9531e" font-size="11" font-weight="600" text-anchor="middle">7. Correct</text>
+            <text x="167" y="150" fill="#64748b" font-size="9" text-anchor="middle">Inflect + Model</text>
+
+            <!-- Arrow 7 -> 8 -->
+            <line x1="120" y1="140" x2="105" y2="140" stroke="#d9531e" stroke-width="2" />
+
+            <!-- Step 8: Output -->
+            <rect x="10" y="110" width="95" height="60" rx="4" fill="#0e2240" stroke="#0e2240" />
+            <text x="57" y="134" fill="#ffffff" font-size="11" font-weight="600" text-anchor="middle">8. Output</text>
+            <text x="57" y="150" fill="#cbd5e1" font-size="9" text-anchor="middle">Diff &amp; String</text>
+        </svg>
+    </div>
+
+    <!-- Step-by-Step Breakdown -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 20px;">
+        <div style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: 4px; padding: 12px;">
+            <strong style="color: var(--navy-primary);">1. Input Text</strong>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 4px;">User supplies English text via the form or REST API up to a maximum of 2,000 characters.</p>
+        </div>
+        <div style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: 4px; padding: 12px;">
+            <strong style="color: var(--navy-primary);">2. Preprocessing</strong>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 4px;">Regex collapses redundant whitespace and normalizes formatting while preserving sentence punctuation.</p>
+        </div>
+        <div style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: 4px; padding: 12px;">
+            <strong style="color: var(--navy-primary);">3. Tokenization</strong>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 4px;">NLTK tokenizers segment text into sentences and track exact character offsets for each word and punctuation symbol.</p>
+        </div>
+        <div style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: 4px; padding: 12px;">
+            <strong style="color: var(--navy-primary);">4. POS Tagging</strong>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 4px;">NLTK's Averaged Perceptron Tagger assigns Penn Treebank tags (PRP, VB, VBZ, VBP, DT, NN) to analyze syntactic roles.</p>
+        </div>
+        <div style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: 4px; padding: 12px;">
+            <strong style="color: var(--navy-primary);">5. Contextual Analysis</strong>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 4px;">Examines subject-verb pairs, auxiliary verbs, article noun pairs, and phonetic vowel sounds of subsequent tokens.</p>
+        </div>
+        <div style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: 4px; padding: 12px;">
+            <strong style="color: var(--navy-primary);">6. Error Detection</strong>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 4px;">Identifies agreement mismatches (e.g. "he eat", "she are", "a engineer") while shielding quoted text and proper nouns.</p>
+        </div>
+        <div style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: 4px; padding: 12px;">
+            <strong style="color: var(--navy-primary);">7. Correction</strong>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 4px;">Morphological inflection engine updates verbs and articles; fine-tuned FLAN-T5 handles broader phrasing when confident.</p>
+        </div>
+        <div style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: 4px; padding: 12px;">
+            <strong style="color: var(--navy-primary);">8. Corrected Output</strong>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 4px;">Assembles the corrected sentence, constructs inline diff highlights (&lt;del&gt; and &lt;ins&gt;), and itemizes all edits.</p>
+        </div>
+    </div>
+</section>
+
+<section class="worked-example" aria-labelledby="example-heading">
+    <h2 id="example-heading">Worked Example</h2>
+    <p style="color: var(--text-muted); margin-bottom: 16px;">
+        Here is a complete trace of how my pipeline processes a test sentence from my course report:
+    </p>
+
+    <div class="example-step">
+        <div class="step-title">Step 1: Input text</div>
+        <div class="step-content">"She go to college every day."</div>
+    </div>
+
+    <div class="example-step">
+        <div class="step-title">Step 2: Preprocessing</div>
+        <div class="step-content">Regex normalizes whitespace: "She go to college every day."</div>
+    </div>
+
+    <div class="example-step">
+        <div class="step-title">Step 3: Tokenization</div>
+        <div class="step-content">Tokens: ['She', 'go', 'to', 'college', 'every', 'day', '.']</div>
+    </div>
+
+    <div class="example-step">
+        <div class="step-title">Step 4: POS Tagging</div>
+        <div class="step-content">[('She', 'PRP'), ('go', 'VBP'), ('to', 'TO'), ('college', 'NN'), ('every', 'DT'), ('day', 'NN'), ('.', '.')]</div>
+    </div>
+
+    <div class="example-step">
+        <div class="step-title">Step 5: Contextual Analysis</div>
+        <div class="step-content">Subject 'She' (PRP, 3rd-person singular) is followed by verb 'go' (VBP, non-3rd person present).</div>
+    </div>
+
+    <div class="example-step">
+        <div class="step-title">Step 6: Error Detection</div>
+        <div class="step-content">Rule violation detected: 3rd-person singular pronoun requires a 3rd-person singular verb form (VBZ).</div>
+    </div>
+
+    <div class="example-step">
+        <div class="step-title">Step 7: Correction</div>
+        <div class="step-content">Verb inflection: 'go' ends in 'o', applying rule to inflect as 'goes'. Span: [4, 6].</div>
+    </div>
+
+    <div class="example-step">
+        <div class="step-title">Step 8: Corrected Output</div>
+        <div class="step-content">"She goes to college every day." (1 edit applied: "go" &rarr; "goes" via subject_verb_agreement)</div>
+    </div>
+</section>
+{% endblock %}

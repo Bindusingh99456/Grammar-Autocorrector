@@ -1,0 +1,58 @@
+{
+  "total_evaluated": 600,
+  "exact_matches": 323,
+  "total_gold_edits": 856,
+  "total_missed_edits": 783,
+  "top_10_weak_categories": [
+    {
+      "category": "R:OTHER",
+      "count": 147,
+      "percentage": 18.77
+    },
+    {
+      "category": "R:NOUN",
+      "count": 98,
+      "percentage": 12.52
+    },
+    {
+      "category": "R:VERB",
+      "count": 48,
+      "percentage": 6.13
+    },
+    {
+      "category": "R:VERB:TENSE",
+      "count": 47,
+      "percentage": 6.0
+    },
+    {
+      "category": "R:ORTH",
+      "count": 46,
+      "percentage": 5.87
+    },
+    {
+      "category": "M:DET",
+      "count": 45,
+      "percentage": 5.75
+    },
+    {
+      "category": "R:PREP",
+      "count": 40,
+      "percentage": 5.11
+    },
+    {
+      "category": "U:DET",
+      "count": 33,
+      "percentage": 4.21
+    },
+    {
+      "category": "R:VERB:SVA",
+      "count": 32,
+      "percentage": 4.09
+    },
+    {
+      "category": "R:NOUN:NUM",
+      "count": 27,
+      "percentage": 3.45
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+
+{% block title %}About - Grammar Autocorrector{% endblock %}
+
+{% block content %}
+<h1>About the Project</h1>
+
+<div class="about-grid">
+    <!-- Student Information -->
+    <section class="info-card" aria-labelledby="student-info-heading">
+        <h2 id="student-info-heading" style="font-size: 1.25rem; color: var(--navy-primary); border-bottom: 2px solid var(--orange-primary); padding-bottom: 6px;">Project &amp; Student Information</h2>
+        <dl>
+            <dt>Project Title</dt>
+            <dd>Grammar Autocorrector</dd>
+
+            <dt>Course</dt>
+            <dd>Natural Language Processing (B.Tech)</dd>
+
+            <dt>Student Name</dt>
+            <dd>Bindu Singh M</dd>
+
+            <dt>SRN / Roll No</dt>
+            <dd>R24EJ024</dd>
+
+            <dt>University</dt>
+            <dd>REVA University, Bengaluru</dd>
+        </dl>
+    </section>
+
+    <!-- Tools Used -->
+    <section class="info-card" aria-labelledby="tools-heading">
+        <h2 id="tools-heading" style="font-size: 1.25rem; color: var(--navy-primary); border-bottom: 2px solid var(--orange-primary); padding-bottom: 6px;">Tools &amp; Libraries</h2>
+        <dl>
+            <dt>Python</dt>
+            <dd>Python 3.10+ used for core linguistic logic, evaluation, and test runners.</dd>
+
+            <dt>NLTK</dt>
+            <dd>Natural Language Toolkit for tokenization and POS tagging (averaged_perceptron_tagger_eng).</dd>
+
+            <dt>FastAPI</dt>
+            <dd>High-performance web server rendering Jinja2 templates and JSON API endpoints.</dd>
+
+            <dt>PEFT &amp; LoRA</dt>
+            <dd>Parameter-Efficient Fine-Tuning library used to train rank-16 LoRA adapters for Seq2Seq LM.</dd>
+
+            <dt>Transformers</dt>
+            <dd>Hugging Face Transformers for loading CoEdIT-Large and seq2seq inference.</dd>
+
+            <dt>PyTorch</dt>
+            <dd>Deep learning backend for tensor operations, loss computation, and generation.</dd>
+        </dl>
+    </section>
+
+    <!-- Datasets & Models -->
+    <section class="info-card" aria-labelledby="datasets-heading">
+        <h2 id="datasets-heading" style="font-size: 1.25rem; color: var(--navy-primary); border-bottom: 2px solid var(--orange-primary); padding-bottom: 6px;">Dataset &amp; Model Credits</h2>
+        <dl>
+            <dt>CoEdIT</dt>
+            <dd>
+                <strong>grammarly/coedit-large (770M params)</strong>: Instruction-tuned text editing model developed by Vipul Raheja et al. (Grammarly, 2023). Fine-tuned with LoRA for grammar and spelling.
+            </dd>
+
+            <dt>JFLEG</dt>
+            <dd>
+                <strong>JHU FLuent Evaluation of Grammatical Errors</strong> (Keisuke Sakaguchi, Courtney Napoles, Matt Post, Joel Tetreault). Dev split used for in-domain refinement; 747-sentence test split strictly isolated for GLEU evaluation.
+            </dd>
+
+            <dt>C4_200M</dt>
+            <dd>
+                <strong>C4_200M Synthetic GEC Dataset</strong> (Li Liwei). A cleaned subset used for broad grammar and spelling pre-training.
+            </dd>
+
+            <dt>W&amp;I+LOCNESS</dt>
+            <dd>
+                <strong>Cambridge Write &amp; Improve + LOCNESS</strong> (Yannis Nevers, Christopher Bryant, Paula Buttery et al., BEA-2019 Shared Task). Development split used for cross-benchmark contamination checks.
+            </dd>
+        </dl>
+    </section>
+
+    <!-- Architecture Overview -->
+    <section class="info-card" aria-labelledby="arch-heading">
+        <h2 id="arch-heading" style="font-size: 1.25rem; color: var(--navy-primary); border-bottom: 2px solid var(--orange-primary); padding-bottom: 6px;">Hybrid Architecture &amp; Data Isolation</h2>
+        <p style="font-size: 0.92rem; color: var(--text-muted); margin-top: 10px; line-height: 1.55;">
+            The system combines deterministic rule-based correction with a sequence-to-sequence model:
+        </p>
+        <ul style="margin: 10px 0 0 18px; font-size: 0.9rem; color: var(--text-primary); line-height: 1.6;">
+            <li><strong>Linguistic Rules:</strong> Deterministic checks for subject-verb agreement, auxiliary verbs (is/are, has/have, does/do), and indefinite articles (a/an).</li>
+            <li><strong>Cloud GPU Model Training:</strong> Staged LoRA fine-tuning of CoEdIT-Large performed via Google Colab / Kaggle; local server executes rules and inference.</li>
+            <li><strong>Zero Data Leakage:</strong> Automated overlap auditing confirms 0 overlapping sentences between training data and test benchmarks (JFLEG test and W&amp;I+LOCNESS dev).</li>
+        </ul>
+    </section>
+</div>
+
+<!-- Known Failures & Linguistic Boundaries -->
+<section class="pipeline-card" style="margin-top: 28px;" aria-labelledby="limitations-heading">
+    <h2 id="limitations-heading" style="font-size: 1.25rem; color: var(--navy-primary); border-bottom: 2px solid var(--orange-primary); padding-bottom: 6px;">Known Failures &amp; Linguistic Boundaries</h2>
+    <p style="font-size: 0.92rem; color: var(--text-muted); margin-top: 8px;">
+        In academic reporting, documenting genuine linguistic edge cases is essential. The following failure modes are documented:
+    </p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; margin-top: 16px;">
+        <div style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: 4px; padding: 12px;">
+            <strong style="color: var(--navy-primary); font-size: 0.95rem;">1. Long-Distance Relative Clauses</strong>
+            <p style="font-size: 0.86rem; color: var(--text-muted); margin-top: 4px;">
+                <em>"The teacher who prepares five different lessons walk to school."</em> &mdash; Intervening clauses separate subject and verb by multiple tokens, bypassing local adjacency windows.
+            </p>
+        </div>
+        <div style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: 4px; padding: 12px;">
+            <strong style="color: var(--navy-primary); font-size: 0.95rem;">2. Noun-Verb POS Homonym Ambiguity</strong>
+            <p style="font-size: 0.86rem; color: var(--text-muted); margin-top: 4px;">
+                <em>"Her daily records show remarkable progress."</em> &mdash; Isolated perceptual taggers can misclassify noun homonyms as verbs (or vice-versa).
+            </p>
+        </div>
+        <div style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: 4px; padding: 12px;">
+            <strong style="color: var(--navy-primary); font-size: 0.95rem;">3. Subjunctive Mood Constructions</strong>
+            <p style="font-size: 0.86rem; color: var(--text-muted); margin-top: 4px;">
+                <em>"I demand that he go immediately."</em> &mdash; Mandative subjunctive demands base-form verbs with third-person subjects, which simple agreement rules would incorrectly flag.
+            </p>
+        </div>
+        <div style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: 4px; padding: 12px;">
+            <strong style="color: var(--navy-primary); font-size: 0.95rem;">4. Contextual Homophone Substitutions</strong>
+            <p style="font-size: 0.86rem; color: var(--text-muted); margin-top: 4px;">
+                <em>"Their going to the market."</em> &mdash; Homophones like "their" vs "they're" are syntactically valid words that require full semantic attention rather than morphological inflection.
+            </p>
+        </div>
+    </div>
+</section>
+{% endblock %}

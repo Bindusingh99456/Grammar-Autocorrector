@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block title %}Editor - Grammar Autocorrector{% endblock %}
+
+{% block content %}
+<h1>Grammar Autocorrector</h1>
+
+{% if error_message %}
+<div class="alert alert-error" role="alert">
+    {{ error_message }}
+</div>
+{% endif %}
+
+<div class="editor-grid">
+    <!-- Left Panel: Input Editor -->
+    <section class="panel" aria-labelledby="input-heading">
+        <div class="panel-header">
+            <h2 id="input-heading" class="panel-title">Input Text</h2>
+            <span class="shortcut-hint">Ctrl+Enter to check</span>
+        </div>
+        <form id="correct-form" class="editor-form" method="POST" action="/correct">
+            <textarea id="text-input" name="text" maxlength="2000" placeholder="Type or paste a sentence here (e.g. She go to college every day.)..." required autofocus>{{ input_text or '' }}</textarea>
+            <div class="form-footer">
+                <span id="char-count" class="char-counter">0 / 2000</span>
+                <button type="submit" class="btn btn-primary" id="submit-btn">Check Grammar</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Right Panel: Correction Output -->
+    <section class="panel" aria-labelledby="result-heading">
+        <div class="panel-header">
+            <h2 id="result-heading" class="panel-title">Correction Result</h2>
+            {% if result %}
+            <div style="display: flex; gap: 8px; align-items: center;">
+                <span class="badge badge-engine">{{ result.engine }}</span>
+                <button type="button" class="btn btn-secondary" id="copy-btn">Copy</button>
+            </div>
+            {% endif %}
+        </div>
+        <div class="result-content">
+            {% if result %}
+                <div class="output-box" id="corrected-text">{{ result.corrected }}</div>
+
+                {% if result.edits %}
+                <div class="diff-container">
+                    <h4 style="font-size: 0.9rem; margin-bottom: 6px; color: var(--navy-secondary);">Inline Changes</h4>
+                    <div class="diff-box">{{ inline_diff_html | safe }}</div>
+                </div>
+
+                <div class="edits-section">
+                    <h4>Detected Changes ({{ result.error_count }})</h4>
+                    <ul class="edits-list">
+                        {% for edit in result.edits %}
+                        <li>
+                            <span class="edit-change">&ldquo;{{ edit.old }}&rdquo; &rarr; &ldquo;{{ edit.new }}&rdquo;</span>
+                            <div class="edit-badges">
+                                <span class="badge badge-{{ edit.type }}">{{ edit.type }}</span>
+                                <span class="edit-rule">{{ edit.rule }}</span>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% else %}
+                <p style="color: var(--diff-ins-text); font-size: 0.95rem; margin-top: 8px; font-weight: 500;">
+                    No grammatical errors detected in the text.
+                </p>
+                {% endif %}
+
+                <details class="token-details">
+                    <summary>Tokens &amp; POS Tags ({{ result.tokens | length }} tokens)</summary>
+                    <div class="details-body">
+                        <p style="color: var(--text-muted); font-size: 0.8rem; margin-bottom: 8px;">
+                            Part-of-speech tags assigned by NLTK perceptron tagger:
+                        </p>
+                        <div class="tag-cloud">
+                            {% for item in result.pos_tags %}
+                            <span class="token-tag-chip">
+                                <span class="tok">{{ item[0] }}</span>
+                                <span class="tag">{{ item[1] }}</span>
+                            </span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </details>
+            {% else %}
+                <div class="output-box empty-state">
+                    <p>No input has been checked yet.</p>
+                    <p style="margin-top: 10px; font-size: 0.88rem; color: var(--text-muted);">
+                        Type or paste a sentence on the left and click <strong>Check Grammar</strong>, or choose a sample sentence from the <a href="/test-cases" style="color: var(--orange-primary); font-weight: 500;">Test Cases</a> page.
+                    </p>
+                </div>
+            {% endif %}
+        </div>
+    </section>
+</div>
+{% endblock %}

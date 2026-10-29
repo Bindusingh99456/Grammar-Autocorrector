@@ -1,0 +1,882 @@
+[
+  {
+    "id": 1,
+    "input": "She go to college every day.",
+    "expected": "She goes to college every day.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "3rd person singular pronoun (she) with base verb (go)"
+  },
+  {
+    "id": 2,
+    "input": "He eat an apple.",
+    "expected": "He eats an apple.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "3rd person singular pronoun (he) with base verb (eat)"
+  },
+  {
+    "id": 3,
+    "input": "They goes to school.",
+    "expected": "They go to school.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "3rd person plural pronoun (they) with 3rd-person singular verb (goes)"
+  },
+  {
+    "id": 4,
+    "input": "She are my friend.",
+    "expected": "She is my friend.",
+    "category": "is_are",
+    "type": "positive",
+    "description": "3rd person singular pronoun (she) with plural auxiliary (are)"
+  },
+  {
+    "id": 5,
+    "input": "They is playing football.",
+    "expected": "They are playing football.",
+    "category": "is_are",
+    "type": "positive",
+    "description": "3rd person plural pronoun (they) with singular auxiliary (is)"
+  },
+  {
+    "id": 6,
+    "input": "He have a car.",
+    "expected": "He has a car.",
+    "category": "has_have",
+    "type": "positive",
+    "description": "3rd person singular pronoun (he) with plural verb (have)"
+  },
+  {
+    "id": 7,
+    "input": "I has a book.",
+    "expected": "I have a book.",
+    "category": "has_have",
+    "type": "positive",
+    "description": "1st person singular pronoun (I) with 3rd-person singular verb (has)"
+  },
+  {
+    "id": 8,
+    "input": "She is a engineer.",
+    "expected": "She is an engineer.",
+    "category": "a_an",
+    "type": "positive",
+    "description": "Indefinite article 'a' before vowel sound ('engineer')"
+  },
+  {
+    "id": 9,
+    "input": "He do not understand.",
+    "expected": "He does not understand.",
+    "category": "does_do",
+    "type": "positive",
+    "description": "3rd person singular pronoun (he) with base auxiliary (do)"
+  },
+  {
+    "id": 10,
+    "input": "She do not like tea.",
+    "expected": "She does not like tea.",
+    "category": "does_do",
+    "type": "positive",
+    "description": "3rd person singular pronoun (she) with base auxiliary (do)"
+  },
+  {
+    "id": 11,
+    "input": "It do not work.",
+    "expected": "It does not work.",
+    "category": "does_do",
+    "type": "positive",
+    "description": "3rd person singular pronoun (it) with base auxiliary (do)"
+  },
+  {
+    "id": 12,
+    "input": "They does not know the answer.",
+    "expected": "They do not know the answer.",
+    "category": "does_do",
+    "type": "positive",
+    "description": "3rd person plural pronoun (they) with 3rd-person auxiliary (does)"
+  },
+  {
+    "id": 13,
+    "input": "We does not agree with this plan.",
+    "expected": "We do not agree with this plan.",
+    "category": "does_do",
+    "type": "positive",
+    "description": "1st person plural pronoun (we) with 3rd-person auxiliary (does)"
+  },
+  {
+    "id": 14,
+    "input": "You does not have time.",
+    "expected": "You do not have time.",
+    "category": "does_do",
+    "type": "positive",
+    "description": "2nd person pronoun (you) with 3rd-person auxiliary (does)"
+  },
+  {
+    "id": 15,
+    "input": "I does not believe it.",
+    "expected": "I do not believe it.",
+    "category": "does_do",
+    "type": "positive",
+    "description": "1st person singular pronoun (I) with 3rd-person auxiliary (does)"
+  },
+  {
+    "id": 16,
+    "input": "He watch television in the evening.",
+    "expected": "He watches television in the evening.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "-ch ending verb inflection (+es)"
+  },
+  {
+    "id": 17,
+    "input": "She wash her hands before eating.",
+    "expected": "She washes her hands before eating.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "-sh ending verb inflection (+es)"
+  },
+  {
+    "id": 18,
+    "input": "He fix computers at the shop.",
+    "expected": "He fixes computers at the shop.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "-x ending verb inflection (+es)"
+  },
+  {
+    "id": 19,
+    "input": "She fly to Delhi every month.",
+    "expected": "She flies to Delhi every month.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "consonant + y verb inflection (-ies)"
+  },
+  {
+    "id": 20,
+    "input": "He try very hard to succeed.",
+    "expected": "He tries very hard to succeed.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "consonant + y verb inflection (-ies)"
+  },
+  {
+    "id": 21,
+    "input": "She cry during sad movies.",
+    "expected": "She cries during sad movies.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "consonant + y verb inflection (-ies)"
+  },
+  {
+    "id": 22,
+    "input": "He carry a heavy backpack.",
+    "expected": "He carries a heavy backpack.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "consonant + y verb inflection (-ies)"
+  },
+  {
+    "id": 23,
+    "input": "It buzz with loud noise.",
+    "expected": "It buzzes with loud noise.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "-zz ending verb inflection (+es)"
+  },
+  {
+    "id": 24,
+    "input": "She catch the morning train.",
+    "expected": "She catches the morning train.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "-ch ending verb inflection (+es)"
+  },
+  {
+    "id": 25,
+    "input": "He kiss his child goodbye.",
+    "expected": "He kisses his child goodbye.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "-ss ending verb inflection (+es)"
+  },
+  {
+    "id": 26,
+    "input": "They watches movies on weekends.",
+    "expected": "They watch movies on weekends.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "plural subject with -es verb to base"
+  },
+  {
+    "id": 27,
+    "input": "We flies to Mumbai tomorrow.",
+    "expected": "We fly to Mumbai tomorrow.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "plural subject with -ies verb to base"
+  },
+  {
+    "id": 28,
+    "input": "You carries too many bags.",
+    "expected": "You carry too many bags.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "2nd person subject with -ies verb to base"
+  },
+  {
+    "id": 29,
+    "input": "They tries to solve the puzzle.",
+    "expected": "They try to solve the puzzle.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "plural subject with -ies verb to base"
+  },
+  {
+    "id": 30,
+    "input": "We fixes bicycles in the garage.",
+    "expected": "We fix bicycles in the garage.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "plural subject with -es verb to base"
+  },
+  {
+    "id": 31,
+    "input": "They catches fish in the lake.",
+    "expected": "They catch fish in the lake.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "plural subject with -es verb to base"
+  },
+  {
+    "id": 32,
+    "input": "You misses the bus frequently.",
+    "expected": "You miss the bus frequently.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "2nd person subject with -es verb to base"
+  },
+  {
+    "id": 33,
+    "input": "He are a smart student.",
+    "expected": "He is a smart student.",
+    "category": "is_are",
+    "type": "positive",
+    "description": "singular pronoun (he) with 'are'"
+  },
+  {
+    "id": 34,
+    "input": "It are difficult to understand.",
+    "expected": "It is difficult to understand.",
+    "category": "is_are",
+    "type": "positive",
+    "description": "singular pronoun (it) with 'are'"
+  },
+  {
+    "id": 35,
+    "input": "We is happy to meet you.",
+    "expected": "We are happy to meet you.",
+    "category": "is_are",
+    "type": "positive",
+    "description": "plural pronoun (we) with 'is'"
+  },
+  {
+    "id": 36,
+    "input": "You is my best colleague.",
+    "expected": "You are my best colleague.",
+    "category": "is_are",
+    "type": "positive",
+    "description": "2nd person pronoun (you) with 'is'"
+  },
+  {
+    "id": 37,
+    "input": "She have three dogs.",
+    "expected": "She has three dogs.",
+    "category": "has_have",
+    "type": "positive",
+    "description": "singular pronoun (she) with 'have'"
+  },
+  {
+    "id": 38,
+    "input": "It have a broken screen.",
+    "expected": "It has a broken screen.",
+    "category": "has_have",
+    "type": "positive",
+    "description": "singular pronoun (it) with 'have'"
+  },
+  {
+    "id": 39,
+    "input": "You has a beautiful garden.",
+    "expected": "You have a beautiful garden.",
+    "category": "has_have",
+    "type": "positive",
+    "description": "2nd person pronoun (you) with 'has'"
+  },
+  {
+    "id": 40,
+    "input": "We has enough time to finish.",
+    "expected": "We have enough time to finish.",
+    "category": "has_have",
+    "type": "positive",
+    "description": "plural pronoun (we) with 'has'"
+  },
+  {
+    "id": 41,
+    "input": "They has completed their assignment.",
+    "expected": "They have completed their assignment.",
+    "category": "has_have",
+    "type": "positive",
+    "description": "plural pronoun (they) with 'has'"
+  },
+  {
+    "id": 42,
+    "input": "Give me a apple.",
+    "expected": "Give me an apple.",
+    "category": "a_an",
+    "type": "positive",
+    "description": "'a' before vowel 'apple'"
+  },
+  {
+    "id": 43,
+    "input": "He waited for a hour at the station.",
+    "expected": "He waited for an hour at the station.",
+    "category": "a_an",
+    "type": "positive",
+    "description": "'a' before silent-h 'hour'"
+  },
+  {
+    "id": 44,
+    "input": "She is a honest police officer.",
+    "expected": "She is an honest police officer.",
+    "category": "a_an",
+    "type": "positive",
+    "description": "'a' before silent-h 'honest'"
+  },
+  {
+    "id": 45,
+    "input": "He attends an university in Bengaluru.",
+    "expected": "He attends a university in Bengaluru.",
+    "category": "a_an",
+    "type": "positive",
+    "description": "'an' before 'yu' sound 'university'"
+  },
+  {
+    "id": 46,
+    "input": "He wears an uniform to school.",
+    "expected": "He wears a uniform to school.",
+    "category": "a_an",
+    "type": "positive",
+    "description": "'an' before 'yu' sound 'uniform'"
+  },
+  {
+    "id": 47,
+    "input": "This is an European Union law.",
+    "expected": "This is a European Union law.",
+    "category": "a_an",
+    "type": "positive",
+    "description": "'an' before 'yu' sound 'European'"
+  },
+  {
+    "id": 48,
+    "input": "She made an one-time payment.",
+    "expected": "She made a one-time payment.",
+    "category": "a_an",
+    "type": "positive",
+    "description": "'an' before 'wa' sound 'one-time'"
+  },
+  {
+    "id": 49,
+    "input": "He is an unique painter.",
+    "expected": "He is a unique painter.",
+    "category": "a_an",
+    "type": "positive",
+    "description": "'an' before 'yu' sound 'unique'"
+  },
+  {
+    "id": 50,
+    "input": "I saw an unicorn in the storybook.",
+    "expected": "I saw a unicorn in the storybook.",
+    "category": "a_an",
+    "type": "positive",
+    "description": "'an' before 'yu' sound 'unicorn'"
+  },
+  {
+    "id": 51,
+    "input": "She gave me a orange.",
+    "expected": "She gave me an orange.",
+    "category": "a_an",
+    "type": "positive",
+    "description": "'a' before vowel 'orange'"
+  },
+  {
+    "id": 52,
+    "input": "He wants a ice cream.",
+    "expected": "He wants an ice cream.",
+    "category": "a_an",
+    "type": "positive",
+    "description": "'a' before vowel 'ice'"
+  },
+  {
+    "id": 53,
+    "input": "We saw an dog in the garden.",
+    "expected": "We saw a dog in the garden.",
+    "category": "a_an",
+    "type": "positive",
+    "description": "'an' before consonant 'dog'"
+  },
+  {
+    "id": 54,
+    "input": "She bought an car yesterday.",
+    "expected": "She bought a car yesterday.",
+    "category": "a_an",
+    "type": "positive",
+    "description": "'an' before consonant 'car'"
+  },
+  {
+    "id": 55,
+    "input": "He has an pen in his pocket.",
+    "expected": "He has a pen in his pocket.",
+    "category": "a_an",
+    "type": "positive",
+    "description": "'an' before consonant 'pen'"
+  },
+  {
+    "id": 56,
+    "input": "It is an useful tool.",
+    "expected": "It is a useful tool.",
+    "category": "a_an",
+    "type": "positive",
+    "description": "'an' before 'yu' sound 'useful'"
+  },
+  {
+    "id": 57,
+    "input": "He always eat breakfast at seven.",
+    "expected": "He always eats breakfast at seven.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "adverb intervening between subject and verb"
+  },
+  {
+    "id": 58,
+    "input": "She never drink coffee at night.",
+    "expected": "She never drinks coffee at night.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "adverb intervening between subject and verb"
+  },
+  {
+    "id": 59,
+    "input": "He often play badminton after work.",
+    "expected": "He often plays badminton after work.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "adverb intervening between subject and verb"
+  },
+  {
+    "id": 60,
+    "input": "She rarely visit her hometown.",
+    "expected": "She rarely visits her hometown.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "adverb intervening between subject and verb"
+  },
+  {
+    "id": 61,
+    "input": "She goes home.",
+    "expected": "She goes home.",
+    "category": "correct_no_change",
+    "type": "negative",
+    "description": "correct 3rd person singular verb form"
+  },
+  {
+    "id": 62,
+    "input": "He eats an apple.",
+    "expected": "He eats an apple.",
+    "category": "correct_no_change",
+    "type": "negative",
+    "description": "correct 3rd person singular verb form and article"
+  },
+  {
+    "id": 63,
+    "input": "It works properly.",
+    "expected": "It works properly.",
+    "category": "correct_no_change",
+    "type": "negative",
+    "description": "correct 3rd person singular verb form"
+  },
+  {
+    "id": 64,
+    "input": "I read books.",
+    "expected": "I read books.",
+    "category": "correct_no_change",
+    "type": "negative",
+    "description": "correct 1st person base verb"
+  },
+  {
+    "id": 65,
+    "input": "You know the answer.",
+    "expected": "You know the answer.",
+    "category": "correct_no_change",
+    "type": "negative",
+    "description": "correct 2nd person base verb"
+  },
+  {
+    "id": 66,
+    "input": "We play football.",
+    "expected": "We play football.",
+    "category": "correct_no_change",
+    "type": "negative",
+    "description": "correct 1st person plural base verb"
+  },
+  {
+    "id": 67,
+    "input": "They study engineering.",
+    "expected": "They study engineering.",
+    "category": "correct_no_change",
+    "type": "negative",
+    "description": "correct 3rd person plural base verb"
+  },
+  {
+    "id": 68,
+    "input": "She is my friend.",
+    "expected": "She is my friend.",
+    "category": "correct_no_change",
+    "type": "negative",
+    "description": "correct singular auxiliary 'is'"
+  },
+  {
+    "id": 69,
+    "input": "He is a good person.",
+    "expected": "He is a good person.",
+    "category": "correct_no_change",
+    "type": "negative",
+    "description": "correct singular auxiliary 'is'"
+  },
+  {
+    "id": 70,
+    "input": "They are ready for the exam.",
+    "expected": "They are ready for the exam.",
+    "category": "correct_no_change",
+    "type": "negative",
+    "description": "correct plural auxiliary 'are'"
+  },
+  {
+    "id": 71,
+    "input": "We are proud of our team.",
+    "expected": "We are proud of our team.",
+    "category": "correct_no_change",
+    "type": "negative",
+    "description": "correct plural auxiliary 'are'"
+  },
+  {
+    "id": 72,
+    "input": "He has two cars.",
+    "expected": "He has two cars.",
+    "category": "correct_no_change",
+    "type": "negative",
+    "description": "correct 3rd person singular 'has'"
+  },
+  {
+    "id": 73,
+    "input": "She has a new laptop.",
+    "expected": "She has a new laptop.",
+    "category": "correct_no_change",
+    "type": "negative",
+    "description": "correct 3rd person singular 'has'"
+  },
+  {
+    "id": 74,
+    "input": "I have a question.",
+    "expected": "I have a question.",
+    "category": "correct_no_change",
+    "type": "negative",
+    "description": "correct 1st person 'have'"
+  },
+  {
+    "id": 75,
+    "input": "We have completed the project.",
+    "expected": "We have completed the project.",
+    "category": "correct_no_change",
+    "type": "negative",
+    "description": "correct 1st person plural 'have'"
+  },
+  {
+    "id": 76,
+    "input": "They have many books.",
+    "expected": "They have many books.",
+    "category": "correct_no_change",
+    "type": "negative",
+    "description": "correct 3rd person plural 'have'"
+  },
+  {
+    "id": 77,
+    "input": "He does his homework on time.",
+    "expected": "He does his homework on time.",
+    "category": "correct_no_change",
+    "type": "negative",
+    "description": "correct 3rd person singular 'does'"
+  },
+  {
+    "id": 78,
+    "input": "They do their work carefully.",
+    "expected": "They do their work carefully.",
+    "category": "correct_no_change",
+    "type": "negative",
+    "description": "correct 3rd person plural 'do'"
+  },
+  {
+    "id": 79,
+    "input": "It takes an hour.",
+    "expected": "It takes an hour.",
+    "category": "correct_no_change",
+    "type": "negative",
+    "description": "correct 'an' before 'hour'"
+  },
+  {
+    "id": 80,
+    "input": "She attended a university.",
+    "expected": "She attended a university.",
+    "category": "correct_no_change",
+    "type": "negative",
+    "description": "correct 'a' before 'university'"
+  },
+  {
+    "id": 81,
+    "input": "He wears a uniform.",
+    "expected": "He wears a uniform.",
+    "category": "correct_no_change",
+    "type": "negative",
+    "description": "correct 'a' before 'uniform'"
+  },
+  {
+    "id": 82,
+    "input": "A cat sat on the mat.",
+    "expected": "A cat sat on the mat.",
+    "category": "correct_no_change",
+    "type": "negative",
+    "description": "correct 'a' before 'cat'"
+  },
+  {
+    "id": 83,
+    "input": "An honest person is valued.",
+    "expected": "An honest person is valued.",
+    "category": "correct_no_change",
+    "type": "negative",
+    "description": "correct 'an' before 'honest'"
+  },
+  {
+    "id": 84,
+    "input": "He can go home.",
+    "expected": "He can go home.",
+    "category": "modal_verbs",
+    "type": "negative",
+    "description": "modal 'can' requires base verb"
+  },
+  {
+    "id": 85,
+    "input": "She will eat lunch.",
+    "expected": "She will eat lunch.",
+    "category": "modal_verbs",
+    "type": "negative",
+    "description": "modal 'will' requires base verb"
+  },
+  {
+    "id": 86,
+    "input": "They should study tonight.",
+    "expected": "They should study tonight.",
+    "category": "modal_verbs",
+    "type": "negative",
+    "description": "modal 'should' requires base verb"
+  },
+  {
+    "id": 87,
+    "input": "We must leave now.",
+    "expected": "We must leave now.",
+    "category": "modal_verbs",
+    "type": "negative",
+    "description": "modal 'must' requires base verb"
+  },
+  {
+    "id": 88,
+    "input": "I could hear the music.",
+    "expected": "I could hear the music.",
+    "category": "modal_verbs",
+    "type": "negative",
+    "description": "modal 'could' requires base verb"
+  },
+  {
+    "id": 89,
+    "input": "You would enjoy this concert.",
+    "expected": "You would enjoy this concert.",
+    "category": "modal_verbs",
+    "type": "negative",
+    "description": "modal 'would' requires base verb"
+  },
+  {
+    "id": 90,
+    "input": "She might visit tomorrow.",
+    "expected": "She might visit tomorrow.",
+    "category": "modal_verbs",
+    "type": "negative",
+    "description": "modal 'might' requires base verb"
+  },
+  {
+    "id": 91,
+    "input": "He may attend the lecture.",
+    "expected": "He may attend the lecture.",
+    "category": "modal_verbs",
+    "type": "negative",
+    "description": "modal 'may' requires base verb"
+  },
+  {
+    "id": 92,
+    "input": "She went home yesterday.",
+    "expected": "She went home yesterday.",
+    "category": "past_tense",
+    "type": "negative",
+    "description": "past tense verb 'went' must not be inflected"
+  },
+  {
+    "id": 93,
+    "input": "He saw a great movie.",
+    "expected": "He saw a great movie.",
+    "category": "past_tense",
+    "type": "negative",
+    "description": "past tense verb 'saw' must not be inflected"
+  },
+  {
+    "id": 94,
+    "input": "They played soccer on Sunday.",
+    "expected": "They played soccer on Sunday.",
+    "category": "past_tense",
+    "type": "negative",
+    "description": "regular past tense verb 'played' must not be inflected"
+  },
+  {
+    "id": 95,
+    "input": "She wrote an essay.",
+    "expected": "She wrote an essay.",
+    "category": "past_tense",
+    "type": "negative",
+    "description": "past tense verb 'wrote' must not be inflected"
+  },
+  {
+    "id": 96,
+    "input": "He drove to the station.",
+    "expected": "He drove to the station.",
+    "category": "past_tense",
+    "type": "negative",
+    "description": "past tense verb 'drove' must not be inflected"
+  },
+  {
+    "id": 97,
+    "input": "We ate lunch together.",
+    "expected": "We ate lunch together.",
+    "category": "past_tense",
+    "type": "negative",
+    "description": "past tense verb 'ate' must not be inflected"
+  },
+  {
+    "id": 98,
+    "input": "I thought about your proposal.",
+    "expected": "I thought about your proposal.",
+    "category": "past_tense",
+    "type": "negative",
+    "description": "past tense verb 'thought' must not be inflected"
+  },
+  {
+    "id": 99,
+    "input": "She said, \"they goes to school.\"",
+    "expected": "She said, \"they goes to school.\"",
+    "category": "quotes_protection",
+    "type": "negative",
+    "description": "quoted text must remain verbatim"
+  },
+  {
+    "id": 100,
+    "input": "He shouted, \"she are my friend!\"",
+    "expected": "He shouted, \"she are my friend!\"",
+    "category": "quotes_protection",
+    "type": "negative",
+    "description": "quoted text must remain verbatim"
+  },
+  {
+    "id": 101,
+    "input": "The book says, \"he have no courage.\"",
+    "expected": "The book says, \"he have no courage.\"",
+    "category": "quotes_protection",
+    "type": "negative",
+    "description": "quoted text must remain verbatim"
+  },
+  {
+    "id": 102,
+    "input": "She whispered, \"I has a secret.\"",
+    "expected": "She whispered, \"I has a secret.\"",
+    "category": "quotes_protection",
+    "type": "negative",
+    "description": "quoted text must remain verbatim"
+  },
+  {
+    "id": 103,
+    "input": "Microsoft is a large company.",
+    "expected": "Microsoft is a large company.",
+    "category": "proper_nouns",
+    "type": "negative",
+    "description": "proper noun must not trigger agreement errors"
+  },
+  {
+    "id": 104,
+    "input": "London is the capital of England.",
+    "expected": "London is the capital of England.",
+    "category": "proper_nouns",
+    "type": "negative",
+    "description": "proper noun must not trigger agreement errors"
+  },
+  {
+    "id": 105,
+    "input": "REVA University is located in Bengaluru.",
+    "expected": "REVA University is located in Bengaluru.",
+    "category": "proper_nouns",
+    "type": "negative",
+    "description": "proper noun acronym must remain untouched"
+  },
+  {
+    "id": 106,
+    "input": "Google develops advanced algorithms.",
+    "expected": "Google develops advanced algorithms.",
+    "category": "proper_nouns",
+    "type": "negative",
+    "description": "proper noun must not be modified"
+  },
+  {
+    "id": 107,
+    "input": "He teach English at high school.",
+    "expected": "He teaches English at high school.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "-ch ending verb 'teach' inflected to 'teaches'"
+  },
+  {
+    "id": 108,
+    "input": "She push the door open.",
+    "expected": "She pushes the door open.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "-sh ending verb 'push' inflected to 'pushes'"
+  },
+  {
+    "id": 109,
+    "input": "They teaches mathematics.",
+    "expected": "They teach mathematics.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "-es verb 'teaches' with plural subject reduced to 'teach'"
+  },
+  {
+    "id": 110,
+    "input": "We pushes the cart together.",
+    "expected": "We push the cart together.",
+    "category": "subject_verb_agreement",
+    "type": "positive",
+    "description": "-es verb 'pushes' with plural subject reduced to 'push'"
+  }
+]

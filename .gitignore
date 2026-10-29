@@ -1,0 +1,28 @@
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Project data and model checkpoints
+data/raw/
+data/processed/
+model/checkpoints/
+model/gec-model/*.safetensors
+model/gec-model/*.bin
+model/gec-model/*.pt
+model/runs/
+*.bin
+*.pt
+*.safetensors
+
+# Environment / local configs
+.env
+*.log
+.DS_Store

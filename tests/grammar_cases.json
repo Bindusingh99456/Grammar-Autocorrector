@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 1,
+    "input": "He go to school.",
+    "expected": "He goes to school.",
+    "category": "subject_verb_agreement",
+    "description": "Report Case 1: He go -> He goes"
+  },
+  {
+    "id": 2,
+    "input": "She eat an apple.",
+    "expected": "She eats an apple.",
+    "category": "subject_verb_agreement",
+    "description": "Report Case 2: She eat -> She eats"
+  },
+  {
+    "id": 3,
+    "input": "They goes to school.",
+    "expected": "They go to school.",
+    "category": "subject_verb_agreement",
+    "description": "Report Case 3: They goes -> They go"
+  },
+  {
+    "id": 4,
+    "input": "She are my friend.",
+    "expected": "She is my friend.",
+    "category": "is_are",
+    "description": "Report Case 4: She are -> She is"
+  },
+  {
+    "id": 5,
+    "input": "They is playing football.",
+    "expected": "They are playing football.",
+    "category": "is_are",
+    "description": "Report Case 5: They is -> They are"
+  },
+  {
+    "id": 6,
+    "input": "He have a car.",
+    "expected": "He has a car.",
+    "category": "has_have",
+    "description": "Report Case 6: He have -> He has"
+  },
+  {
+    "id": 7,
+    "input": "I has a book.",
+    "expected": "I have a book.",
+    "category": "has_have",
+    "description": "Report Case 7: I has -> I have"
+  },
+  {
+    "id": 8,
+    "input": "She is a engineer.",
+    "expected": "She is an engineer.",
+    "category": "a_an",
+    "description": "Report Case 8: a engineer -> an engineer"
+  },
+  {
+    "id": 9,
+    "input": "She work at a software company.",
+    "expected": "She works at a software company.",
+    "category": "subject_verb_agreement",
+    "description": "She work -> works"
+  },
+  {
+    "id": 10,
+    "input": "He write articles for a magazine.",
+    "expected": "He writes articles for a magazine.",
+    "category": "subject_verb_agreement",
+    "description": "He write -> writes"
+  },
+  {
+    "id": 11,
+    "input": "It take a long time to learn violin.",
+    "expected": "It takes a long time to learn violin.",
+    "category": "subject_verb_agreement",
+    "description": "It take -> takes"
+  },
+  {
+    "id": 12,
+    "input": "He run five kilometers every morning.",
+    "expected": "He runs five kilometers every morning.",
+    "category": "subject_verb_agreement",
+    "description": "He run -> runs"
+  },
+  {
+    "id": 13,
+    "input": "She sing beautifully in the choir.",
+    "expected": "She sings beautifully in the choir.",
+    "category": "subject_verb_agreement",
+    "description": "She sing -> sings"
+  },
+  {
+    "id": 14,
+    "input": "He speak three languages fluently.",
+    "expected": "He speaks three languages fluently.",
+    "category": "subject_verb_agreement",
+    "description": "He speak -> speaks"
+  },
+  {
+    "id": 15,
+    "input": "It rain frequently during July.",
+    "expected": "It rains frequently during July.",
+    "category": "subject_verb_agreement",
+    "description": "It rain -> rains"
+  },
+  {
+    "id": 16,
+    "input": "She teach mathematics at the university.",
+    "expected": "She teaches mathematics at the university.",
+    "category": "subject_verb_agreement",
+    "description": "teach -> teaches (-es)"
+  },
+  {
+    "id": 17,
+    "input": "He watch news every evening.",
+    "expected": "He watches news every evening.",
+    "category": "subject_verb_agreement",
+    "description": "watch -> watches (-es)"
+  },
+  {
+    "id": 18,
+    "input": "She pass the library on her way home.",
+    "expected": "She passes the library on her way home.",
+    "category": "subject_verb_agreement",
+    "description": "pass -> passes (-es)"
+  },
+  {
+    "id": 19,
+    "input": "He fix broken laptops for students.",
+    "expected": "He fixes broken laptops for students.",
+    "category": "subject_verb_agreement",
+    "description": "fix -> fixes (-es)"
+  },
+  {
+    "id": 20,
+    "input": "She wash her hands before dinner.",
+    "expected": "She washes her hands before dinner.",
+    "category": "subject_verb_agreement",
+    "description": "wash -> washes (-es)"
+  },
+  {
+    "id": 21,
+    "input": "He carry a heavy backpack to school.",
+    "expected": "He carries a heavy backpack to school.",
+    "category": "subject_verb_agreement",
+    "description": "carry -> carries (-ies)"
+  },
+  {
+    "id": 22,
+    "input": "She study late into the night.",
+    "expected": "She studies late into the night.",
+    "category": "subject_verb_agreement",
+    "description": "study -> studies (-ies)"
+  },
+  {
+    "id": 23,
+    "input": "He fly to Delhi once a month.",
+    "expected": "He flies to Delhi once a month.",
+    "category": "subject_verb_agreement",
+    "description": "fly -> flies (-ies)"
+  },
+  {
+    "id": 24,
+    "input": "They plays basketball every weekend.",
+    "expected": "They play basketball every weekend.",
+    "category": "subject_verb_agreement",
+    "description": "They plays -> play"
+  },
+  {
+    "id": 25,
+    "input": "We lives in a quiet neighborhood.",
+    "expected": "We live in a quiet neighborhood.",
+    "category": "subject_verb_agreement",
+    "description": "We lives -> live"
+  },
+  {
+    "id": 26,
+    "input": "You speaks English very clearly.",
+    "expected": "You speak English very clearly.",
+    "category": "subject_verb_agreement",
+    "description": "You speaks -> speak"
+  },
+  {
+    "id": 27,
+    "input": "I walks to the college campus.",
+    "expected": "I walk to the college campus.",
+    "category": "subject_verb_agreement",
+    "description": "I walks -> walk"
+  },
+  {
+    "id": 28,
+    "input": "They likes to read detective novels.",
+    "expected": "They like to read detective novels.",
+    "category": "subject_verb_agreement",
+    "description": "They likes -> like"
+  },
+  {
+    "id": 29,
+    "input": "We wants to visit the museum today.",
+    "expected": "We want to visit the museum today.",
+    "category": "subject_verb_agreement",
+    "description": "We wants -> want"
+  },
+  {
+    "id": 30,
+    "input": "You drives very carefully.",
+    "expected": "You drive very carefully.",
+    "category": "subject_verb_agreement",
+    "description": "You drives -> drive"
+  },
+  {
+    "id": 31,
+    "input": "I drinks coffee in the morning.",
+    "expected": "I drink coffee in the morning.",
+    "category": "subject_verb_agreement",
+    "description": "I drinks -> drink"
+  },
+  {
+    "id": 32,
+    "input": "They reads research papers daily.",
+    "expected": "They read research papers daily.",
+    "category": "subject_verb_agreement",
+    "description": "They reads -> read"
+  },
+  {
+    "id": 33,
+    "input": "We cooks dinner together on Sundays.",
+    "expected": "We cook dinner together on Sundays.",
+    "category": "subject_verb_agreement",
+    "description": "We cooks -> cook"
+  },
+  {
+    "id": 34,
+    "input": "You knows the secret password.",
+    "expected": "You know the secret password.",
+    "category": "subject_verb_agreement",
+    "description": "You knows -> know"
+  },
+  {
+    "id": 35,
+    "input": "I swims in the pool on weekends.",
+    "expected": "I swim in the pool on weekends.",
+    "category": "subject_verb_agreement",
+    "description": "I swims -> swim"
+  },
+  {
+    "id": 36,
+    "input": "The dog bark loudly at night.",
+    "expected": "The dog barks loudly at night.",
+    "category": "subject_verb_agreement",
+    "description": "Singular noun dog -> barks"
+  },
+  {
+    "id": 37,
+    "input": "The teacher explain the lesson well.",
+    "expected": "The teacher explains the lesson well.",
+    "category": "subject_verb_agreement",
+    "description": "teacher explain -> explains"
+  },
+  {
+    "id": 38,
+    "input": "My brother live in London.",
+    "expected": "My brother lives in London.",
+    "category": "subject_verb_agreement",
+    "description": "brother live -> lives"
+  },
+  {
+    "id": 39,
+    "input": "The sun shine brightly in summer.",
+    "expected": "The sun shines brightly in summer.",
+    "category": "subject_verb_agreement",
+    "description": "sun shine -> shines"
+  },
+  {
+    "id": 40,
+    "input": "The car need a thorough wash.",
+    "expected": "The car needs a thorough wash.",
+    "category": "subject_verb_agreement",
+    "description": "car need -> needs"
+  },
+  {
+    "id": 41,
+    "input": "A bird fly across the blue sky.",
+    "expected": "A bird flies across the blue sky.",
+    "category": "subject_verb_agreement",
+    "description": "bird fly -> flies"
+  },
+  {
+    "id": 42,
+    "input": "The train arrive at platform two.",
+    "expected": "The train arrives at platform two.",
+    "category": "subject_verb_agreement",
+    "description": "train arrive -> arrives"
+  },
+  {
+    "id": 43,
+    "input": "My sister work at a bank.",
+    "expected": "My sister works at a bank.",
+    "category": "subject_verb_agreement",
+    "description": "sister work -> works"
+  },
+  {
+    "id": 44,
+    "input": "The clock tick softly in the room.",
+    "expected": "The clock ticks softly in the room.",
+    "category": "subject_verb_agreement",
+    "description": "clock tick -> ticks"
+  },
+  {
+    "id": 45,
+    "input": "The boy play cricket in the park.",
+    "expected": "The boy plays cricket in the park.",
+    "category": "subject_verb_agreement",
+    "description": "boy play -> plays"
+  },
+  {
+    "id": 46,
+    "input": "The dogs barks at the mail carrier.",
+    "expected": "The dogs bark at the mail carrier.",
+    "category": "subject_verb_agreement",
+    "description": "Plural dogs barks -> bark"
+  },
+  {
+    "id": 47,
+    "input": "The students studies in the quiet hall.",
+    "expected": "The students study in the quiet hall.",
+    "category": "subject_verb_agreement",
+    "description": "students studies -> study"
+  },
+  {
+    "id": 48,
+    "input": "The birds flies south for the winter.",
+    "expected": "The birds fly south for the winter.",
+    "category": "subject_verb_agreement",
+    "description": "birds flies -> fly"
+  },
+  {
+    "id": 49,
+    "input": "The cars needs new winter tires.",
+    "expected": "The cars need new winter tires.",
+    "category": "subject_verb_agreement",
+    "description": "cars needs -> need"
+  },
+  {
+    "id": 50,
+    "input": "The teachers explains the exam syllabus.",
+    "expected": "The teachers explain the exam syllabus.",
+    "category": "subject_verb_agreement",
+    "description": "teachers explains -> explain"
+  },
+  {
+    "id": 51,
+    "input": "My brothers lives in different cities.",
+    "expected": "My brothers live in different cities.",
+    "category": "subject_verb_agreement",
+    "description": "brothers lives -> live"
+  },
+  {
+    "id": 52,
+    "input": "The trains arrives on time today.",
+    "expected": "The trains arrive on time today.",
+    "category": "subject_verb_agreement",
+    "description": "trains arrives -> arrive"
+  },
+  {
+    "id": 53,
+    "input": "The clocks ticks simultaneously.",
+    "expected": "The clocks tick simultaneously.",
+    "category": "subject_verb_agreement",
+    "description": "clocks ticks -> tick"
+  },
+  {
+    "id": 54,
+    "input": "The boys plays football after school.",
+    "expected": "The boys play football after school.",
+    "category": "subject_verb_agreement",
+    "description": "boys plays -> play"
+  },
+  {
+    "id": 55,
+    "input": "The girls sings in the school choir.",
+    "expected": "The girls sing in the school choir.",
+    "category": "subject_verb_agreement",
+    "description": "girls sings -> sing"
+  },
+  {
+    "id": 56,
+    "input": "The water boil at one hundred degrees.",
+    "expected": "The water boils at one hundred degrees.",
+    "category": "subject_verb_agreement",
+    "description": "Uncountable water boil -> boils"
+  },
+  {
+    "id": 57,
+    "input": "The earth revolve around the sun.",
+    "expected": "The earth revolves around the sun.",
+    "category": "subject_verb_agreement",
+    "description": "earth revolve -> revolves"
+  },
+  {
+    "id": 58,
+    "input": "The baby cry when it is hungry.",
+    "expected": "The baby cries when it is hungry.",
+    "category": "subject_verb_agreement",
+    "description": "baby cry -> cries"
+  },
+  {
+    "id": 59,
+    "input": "The wind blow strongly from the west.",
+    "expected": "The wind blows strongly from the west.",
+    "category": "subject_verb_agreement",
+    "description": "wind blow -> blows"
+  },
+  {
+    "id": 60,
+    "input": "The machine operate smoothly.",
+    "expected": "The machine operates smoothly.",
+    "category": "subject_verb_agreement",
+    "description": "machine operate -> operates"
+  },
+  {
+    "id": 61,
+    "input": "He are very kind to everyone.",
+    "expected": "He is very kind to everyone.",
+    "category": "is_are",
+    "description": "He are -> He is"
+  },
+  {
+    "id": 62,
+    "input": "It are a wonderful day.",
+    "expected": "It is a wonderful day.",
+    "category": "is_are",
+    "description": "It are -> It is"
+  },
+  {
+    "id": 63,
+    "input": "The book are on the wooden table.",
+    "expected": "The book is on the wooden table.",
+    "category": "is_are",
+    "description": "book are -> book is"
+  },
+  {
+    "id": 64,
+    "input": "The cat are sleeping on the rug.",
+    "expected": "The cat is sleeping on the rug.",
+    "category": "is_are",
+    "description": "cat are -> cat is"
+  },
+  {
+    "id": 65,
+    "input": "We is planning a summer trip.",
+    "expected": "We are planning a summer trip.",
+    "category": "is_are",
+    "description": "We is -> We are"
+  },
+  {
+    "id": 66,
+    "input": "You is invited to the ceremony.",
+    "expected": "You are invited to the ceremony.",
+    "category": "is_are",
+    "description": "You is -> You are"
+  },
+  {
+    "id": 67,
+    "input": "The books is on the top shelf.",
+    "expected": "The books are on the top shelf.",
+    "category": "is_are",
+    "description": "books is -> books are"
+  },
+  {
+    "id": 68,
+    "input": "The students is preparing for exams.",
+    "expected": "The students are preparing for exams.",
+    "category": "is_are",
+    "description": "students is -> students are"
+  },
+  {
+    "id": 69,
+    "input": "The children is playing in the garden.",
+    "expected": "The children are playing in the garden.",
+    "category": "is_are",
+    "description": "children is -> children are"
+  },
+  {
+    "id": 70,
+    "input": "I is ready to start the presentation.",
+    "expected": "I am ready to start the presentation.",
+    "category": "is_are",
+    "description": "I is -> I am"
+  },
+  {
+    "id": 71,
+    "input": "She have two adorable kittens.",
+    "expected": "She has two adorable kittens.",
+    "category": "has_have",
+    "description": "She have -> She has"
+  },
+  {
+    "id": 72,
+    "input": "It have been a productive week.",
+    "expected": "It has been a productive week.",
+    "category": "has_have",
+    "description": "It have -> It has"
+  },
+  {
+    "id": 73,
+    "input": "The company have announced a bonus.",
+    "expected": "The company has announced a bonus.",
+    "category": "has_have",
+    "description": "company have -> has"
+  },
+  {
+    "id": 74,
+    "input": "The doctor have left the clinic.",
+    "expected": "The doctor has left the clinic.",
+    "category": "has_have",
+    "description": "doctor have -> has"
+  },
+  {
+    "id": 75,
+    "input": "They has completed the assignment.",
+    "expected": "They have completed the assignment.",
+    "category": "has_have",
+    "description": "They has -> They have"
+  },
+  {
+    "id": 76,
+    "input": "We has lived here for five years.",
+    "expected": "We have lived here for five years.",
+    "category": "has_have",
+    "description": "We has -> We have"
+  },
+  {
+    "id": 77,
+    "input": "You has done a remarkable job.",
+    "expected": "You have done a remarkable job.",
+    "category": "has_have",
+    "description": "You has -> You have"
+  },
+  {
+    "id": 78,
+    "input": "The players has left the field.",
+    "expected": "The players have left the field.",
+    "category": "has_have",
+    "description": "players has -> have"
+  },
+  {
+    "id": 79,
+    "input": "He do not understand the problem.",
+    "expected": "He does not understand the problem.",
+    "category": "does_do",
+    "description": "He do -> He does"
+  },
+  {
+    "id": 80,
+    "input": "She do not want any dessert.",
+    "expected": "She does not want any dessert.",
+    "category": "does_do",
+    "description": "She do -> She does"
+  },
+  {
+    "id": 81,
+    "input": "It do not make any difference.",
+    "expected": "It does not make any difference.",
+    "category": "does_do",
+    "description": "It do -> It does"
+  },
+  {
+    "id": 82,
+    "input": "The phone do not work properly.",
+    "expected": "The phone does not work properly.",
+    "category": "does_do",
+    "description": "phone do -> does"
+  },
+  {
+    "id": 83,
+    "input": "They does not know the answer.",
+    "expected": "They do not know the answer.",
+    "category": "does_do",
+    "description": "They does -> They do"
+  },
+  {
+    "id": 84,
+    "input": "We does not support that policy.",
+    "expected": "We do not support that policy.",
+    "category": "does_do",
+    "description": "We does -> We do"
+  },
+  {
+    "id": 85,
+    "input": "You does not need to worry.",
+    "expected": "You do not need to worry.",
+    "category": "does_do",
+    "description": "You does -> You do"
+  },
+  {
+    "id": 86,
+    "input": "The rules does not apply here.",
+    "expected": "The rules do not apply here.",
+    "category": "does_do",
+    "description": "rules does -> do"
+  },
+  {
+    "id": 87,
+    "input": "He were absent yesterday.",
+    "expected": "He was absent yesterday.",
+    "category": "was_were",
+    "description": "He were -> He was"
+  },
+  {
+    "id": 88,
+    "input": "She were very happy with the result.",
+    "expected": "She was very happy with the result.",
+    "category": "was_were",
+    "description": "She were -> She was"
+  },
+  {
+    "id": 89,
+    "input": "The dog were barking all night.",
+    "expected": "The dog was barking all night.",
+    "category": "was_were",
+    "description": "dog were -> dog was"
+  },
+  {
+    "id": 90,
+    "input": "They was walking along the river.",
+    "expected": "They were walking along the river.",
+    "category": "was_were",
+    "description": "They was -> They were"
+  },
+  {
+    "id": 91,
+    "input": "We was excited about the concert.",
+    "expected": "We were excited about the concert.",
+    "category": "was_were",
+    "description": "We was -> We were"
+  },
+  {
+    "id": 92,
+    "input": "You was late for the lecture.",
+    "expected": "You were late for the lecture.",
+    "category": "was_were",
+    "description": "You was -> You were"
+  },
+  {
+    "id": 93,
+    "input": "The students was studying quietly.",
+    "expected": "The students were studying quietly.",
+    "category": "was_were",
+    "description": "students was -> were"
+  },
+  {
+    "id": 94,
+    "input": "Does they go to the library often?",
+    "expected": "Do they go to the library often?",
+    "category": "does_do",
+    "description": "Does they -> Do they"
+  },
+  {
+    "id": 95,
+    "input": "Do he know the way to the station?",
+    "expected": "Does he know the way to the station?",
+    "category": "does_do",
+    "description": "Do he -> Does he"
+  },
+  {
+    "id": 96,
+    "input": "Has you seen the new movie yet?",
+    "expected": "Have you seen the new movie yet?",
+    "category": "has_have",
+    "description": "Has you -> Have you"
+  },
+  {
+    "id": 97,
+    "input": "Have he finished his assignment?",
+    "expected": "Has he finished his assignment?",
+    "category": "has_have",
+    "description": "Have he -> Has he"
+  },
+  {
+    "id": 98,
+    "input": "Is they coming with us tonight?",
+    "expected": "Are they coming with us tonight?",
+    "category": "is_are",
+    "description": "Is they -> Are they"
+  },
+  {
+    "id": 99,
+    "input": "Are she ready to leave now?",
+    "expected": "Is she ready to leave now?",
+    "category": "is_are",
+    "description": "Are she -> Is she"
+  },
+  {
+    "id": 100,
+    "input": "Am they still waiting outside?",
+    "expected": "Are they still waiting outside?",
+    "category": "is_are",
+    "description": "Am they -> Are they"
+  },
+  {
+    "id": 101,
+    "input": "I ate a orange for breakfast.",
+    "expected": "I ate an orange for breakfast.",
+    "category": "a_an",
+    "description": "a orange -> an orange"
+  },
+  {
+    "id": 102,
+    "input": "She bought a umbrella yesterday.",
+    "expected": "She bought an umbrella yesterday.",
+    "category": "a_an",
+    "description": "a umbrella -> an umbrella"
+  },
+  {
+    "id": 103,
+    "input": "He is a honest man.",
+    "expected": "He is an honest man.",
+    "category": "a_an",
+    "description": "silent h: a honest -> an honest"
+  },
+  {
+    "id": 104,
+    "input": "We will leave in a hour.",
+    "expected": "We will leave in an hour.",
+    "category": "a_an",
+    "description": "silent h: a hour -> an hour"
+  },
+  {
+    "id": 105,
+    "input": "It was a honor to meet the president.",
+    "expected": "It was an honor to meet the president.",
+    "category": "a_an",
+    "description": "silent h: a honor -> an honor"
+  },
+  {
+    "id": 106,
+    "input": "He is an heir to a large fortune.",
+    "expected": "He is an heir to a large fortune.",
+    "category": "a_an",
+    "description": "an heir correct"
+  },
+  {
+    "id": 107,
+    "input": "She studies at an university in Bangalore.",
+    "expected": "She studies at a university in Bangalore.",
+    "category": "a_an",
+    "description": "yu-sound: an university -> a university"
+  },
+  {
+    "id": 108,
+    "input": "He wears an uniform to work.",
+    "expected": "He wears a uniform to work.",
+    "category": "a_an",
+    "description": "yu-sound: an uniform -> a uniform"
+  },
+  {
+    "id": 109,
+    "input": "This is an unique opportunity.",
+    "expected": "This is a unique opportunity.",
+    "category": "a_an",
+    "description": "yu-sound: an unique -> a unique"
+  },
+  {
+    "id": 110,
+    "input": "They formed an union to protect workers.",
+    "expected": "They formed a union to protect workers.",
+    "category": "a_an",
+    "description": "yu-sound: an union -> a union"
+  },
+  {
+    "id": 111,
+    "input": "That was an useful piece of advice.",
+    "expected": "That was a useful piece of advice.",
+    "category": "a_an",
+    "description": "yu-sound: an useful -> a useful"
+  },
+  {
+    "id": 112,
+    "input": "She is an European citizen.",
+    "expected": "She is a European citizen.",
+    "category": "a_an",
+    "description": "yu-sound: an European -> a European"
+  },
+  {
+    "id": 113,
+    "input": "This is an one-way street.",
+    "expected": "This is a one-way street.",
+    "category": "a_an",
+    "description": "wa-sound: an one-way -> a one-way"
+  },
+  {
+    "id": 114,
+    "input": "It was an once-in-a-lifetime experience.",
+    "expected": "It was a once-in-a-lifetime experience.",
+    "category": "a_an",
+    "description": "wa-sound: an once -> a once"
+  },
+  {
+    "id": 115,
+    "input": "She needs an MRI scan tomorrow.",
+    "expected": "She needs an MRI scan tomorrow.",
+    "category": "a_an",
+    "description": "vowel acronym: an MRI correct"
+  },
+  {
+    "id": 116,
+    "input": "He has a MBA degree from Harvard.",
+    "expected": "He has an MBA degree from Harvard.",
+    "category": "a_an",
+    "description": "vowel acronym: a MBA -> an MBA"
+  },
+  {
+    "id": 117,
+    "input": "She filed a FIR at the local police station.",
+    "expected": "She filed an FIR at the local police station.",
+    "category": "a_an",
+    "description": "vowel acronym: a FIR -> an FIR"
+  },
+  {
+    "id": 118,
+    "input": "I saw an UFO in the sky last night.",
+    "expected": "I saw a UFO in the sky last night.",
+    "category": "a_an",
+    "description": "consonant acronym: an UFO -> a UFO"
+  },
+  {
+    "id": 119,
+    "input": "She has an cat and a dog.",
+    "expected": "She has a cat and a dog.",
+    "category": "a_an",
+    "description": "an cat -> a cat"
+  },
+  {
+    "id": 120,
+    "input": "He bought an car last weekend.",
+    "expected": "He bought a car last weekend.",
+    "category": "a_an",
+    "description": "an car -> a car"
+  },
+  {
+    "id": 121,
+    "input": "I read an book yesterday.",
+    "expected": "I read a book yesterday.",
+    "category": "a_an",
+    "description": "an book -> a book"
+  },
+  {
+    "id": 122,
+    "input": "She is an doctor at the city hospital.",
+    "expected": "She is a doctor at the city hospital.",
+    "category": "a_an",
+    "description": "an doctor -> a doctor"
+  },
+  {
+    "id": 123,
+    "input": "He works as an teacher.",
+    "expected": "He works as a teacher.",
+    "category": "a_an",
+    "description": "an teacher -> a teacher"
+  },
+  {
+    "id": 124,
+    "input": "They visited a ancient monument.",
+    "expected": "They visited an ancient monument.",
+    "category": "a_an",
+    "description": "a ancient -> an ancient"
+  },
+  {
+    "id": 125,
+    "input": "She made a excellent point.",
+    "expected": "She made an excellent point.",
+    "category": "a_an",
+    "description": "a excellent -> an excellent"
+  },
+  {
+    "id": 126,
+    "input": "He has a interesting hobby.",
+    "expected": "He has an interesting hobby.",
+    "category": "a_an",
+    "description": "a interesting -> an interesting"
+  },
+  {
+    "id": 127,
+    "input": "It was a unforgettable journey.",
+    "expected": "It was an unforgettable journey.",
+    "category": "a_an",
+    "description": "a unforgettable -> an unforgettable"
+  },
+  {
+    "id": 128,
+    "input": "She gave me a apple.",
+    "expected": "She gave me an apple.",
+    "category": "a_an",
+    "description": "a apple -> an apple"
+  },
+  {
+    "id": 129,
+    "input": "He found a egg in the nest.",
+    "expected": "He found an egg in the nest.",
+    "category": "a_an",
+    "description": "a egg -> an egg"
+  },
+  {
+    "id": 130,
+    "input": "I saw a elephant at the zoo.",
+    "expected": "I saw an elephant at the zoo.",
+    "category": "a_an",
+    "description": "a elephant -> an elephant"
+  },
+  {
+    "id": 131,
+    "input": "She had a idea for the project.",
+    "expected": "She had an idea for the project.",
+    "category": "a_an",
+    "description": "a idea -> an idea"
+  },
+  {
+    "id": 132,
+    "input": "He has a uncle who lives in Canada.",
+    "expected": "He has an uncle who lives in Canada.",
+    "category": "a_an",
+    "description": "a uncle -> an uncle"
+  },
+  {
+    "id": 133,
+    "input": "She has a optimistic outlook on life.",
+    "expected": "She has an optimistic outlook on life.",
+    "category": "a_an",
+    "description": "a optimistic -> an optimistic"
+  },
+  {
+    "id": 134,
+    "input": "It was a urgent phone call.",
+    "expected": "It was an urgent phone call.",
+    "category": "a_an",
+    "description": "a urgent -> an urgent"
+  },
+  {
+    "id": 135,
+    "input": "He gave me a honest answer.",
+    "expected": "He gave me an honest answer.",
+    "category": "a_an",
+    "description": "a honest answer -> an honest answer"
+  },
+  {
+    "id": 136,
+    "input": "She can speaks English fluently.",
+    "expected": "She can speak English fluently.",
+    "category": "modal_verbs",
+    "description": "can speaks -> can speak"
+  },
+  {
+    "id": 137,
+    "input": "He will goes to the party tonight.",
+    "expected": "He will go to the party tonight.",
+    "category": "modal_verbs",
+    "description": "will goes -> will go"
+  },
+  {
+    "id": 138,
+    "input": "They should studies for the final exam.",
+    "expected": "They should study for the final exam.",
+    "category": "modal_verbs",
+    "description": "should studies -> should study"
+  },
+  {
+    "id": 139,
+    "input": "We must leaves before it gets dark.",
+    "expected": "We must leave before it gets dark.",
+    "category": "modal_verbs",
+    "description": "must leaves -> must leave"
+  },
+  {
+    "id": 140,
+    "input": "He might comes to visit us tomorrow.",
+    "expected": "He might come to visit us tomorrow.",
+    "category": "modal_verbs",
+    "description": "might comes -> might come"
+  },
+  {
+    "id": 141,
+    "input": "She would likes a glass of water.",
+    "expected": "She would like a glass of water.",
+    "category": "modal_verbs",
+    "description": "would likes -> would like"
+  },
+  {
+    "id": 142,
+    "input": "I can swims across the lake.",
+    "expected": "I can swim across the lake.",
+    "category": "modal_verbs",
+    "description": "can swims -> can swim"
+  },
+  {
+    "id": 143,
+    "input": "They will helps you move the furniture.",
+    "expected": "They will help you move the furniture.",
+    "category": "modal_verbs",
+    "description": "will helps -> will help"
+  },
+  {
+    "id": 144,
+    "input": "He wants to goes home early.",
+    "expected": "He wants to go home early.",
+    "category": "infinitive",
+    "description": "to goes -> to go"
+  },
+  {
+    "id": 145,
+    "input": "She hopes to passes the entrance exam.",
+    "expected": "She hopes to pass the entrance exam.",
+    "category": "infinitive",
+    "description": "to passes -> to pass"
+  },
+  {
+    "id": 146,
+    "input": "They decided to buys the new house.",
+    "expected": "They decided to buy the new house.",
+    "category": "infinitive",
+    "description": "to buys -> to buy"
+  },
+  {
+    "id": 147,
+    "input": "We need to leaves right now.",
+    "expected": "We need to leave right now.",
+    "category": "infinitive",
+    "description": "to leaves -> to leave"
+  },
+  {
+    "id": 148,
+    "input": "He tried to calls her several times.",
+    "expected": "He tried to call her several times.",
+    "category": "infinitive",
+    "description": "to calls -> to call"
+  },
+  {
+    "id": 149,
+    "input": "She promised to helps me with math.",
+    "expected": "She promised to help me with math.",
+    "category": "infinitive",
+    "description": "to helps -> to help"
+  },
+  {
+    "id": 150,
+    "input": "He can run very fast.",
+    "expected": "He can run very fast.",
+    "category": "modal_verbs",
+    "description": "Correct modal sentence"
+  },
+  {
+    "id": 151,
+    "input": "She will write the report tomorrow.",
+    "expected": "She will write the report tomorrow.",
+    "category": "modal_verbs",
+    "description": "Correct modal sentence"
+  },
+  {
+    "id": 152,
+    "input": "They should arrive around noon.",
+    "expected": "They should arrive around noon.",
+    "category": "modal_verbs",
+    "description": "Correct modal sentence"
+  },
+  {
+    "id": 153,
+    "input": "We must protect our national parks.",
+    "expected": "We must protect our national parks.",
+    "category": "modal_verbs",
+    "description": "Correct modal sentence"
+  },
+  {
+    "id": 154,
+    "input": "You may take the remaining cookies.",
+    "expected": "You may take the remaining cookies.",
+    "category": "modal_verbs",
+    "description": "Correct modal sentence"
+  },
+  {
+    "id": 155,
+    "input": "He shall overcome these difficulties.",
+    "expected": "He shall overcome these difficulties.",
+    "category": "modal_verbs",
+    "description": "Correct modal sentence"
+  },
+  {
+    "id": 156,
+    "input": "She goes to college every day.",
+    "expected": "She goes to college every day.",
+    "category": "correct_no_change",
+    "description": "Correct 3rd person singular"
+  },
+  {
+    "id": 157,
+    "input": "He has two brothers and one sister.",
+    "expected": "He has two brothers and one sister.",
+    "category": "correct_no_change",
+    "description": "Correct has"
+  },
+  {
+    "id": 158,
+    "input": "They are playing in the garden.",
+    "expected": "They are playing in the garden.",
+    "category": "correct_no_change",
+    "description": "Correct they are"
+  },
+  {
+    "id": 159,
+    "input": "I have completed all my tasks.",
+    "expected": "I have completed all my tasks.",
+    "category": "correct_no_change",
+    "description": "Correct I have"
+  },
+  {
+    "id": 160,
+    "input": "The sun rises in the east.",
+    "expected": "The sun rises in the east.",
+    "category": "correct_no_change",
+    "description": "Correct sun rises"
+  },
+  {
+    "id": 161,
+    "input": "She is an architect at a design firm.",
+    "expected": "She is an architect at a design firm.",
+    "category": "correct_no_change",
+    "description": "Correct an architect"
+  },
+  {
+    "id": 162,
+    "input": "He lives in Bangalore.",
+    "expected": "He lives in Bangalore.",
+    "category": "correct_no_change",
+    "description": "Correct he lives"
+  },
+  {
+    "id": 163,
+    "input": "We walk to the park every evening.",
+    "expected": "We walk to the park every evening.",
+    "category": "correct_no_change",
+    "description": "Correct we walk"
+  },
+  {
+    "id": 164,
+    "input": "The children love eating chocolate ice cream.",
+    "expected": "The children love eating chocolate ice cream.",
+    "category": "correct_no_change",
+    "description": "Correct plural love"
+  },
+  {
+    "id": 165,
+    "input": "Water boils at one hundred degrees Celsius.",
+    "expected": "Water boils at one hundred degrees Celsius.",
+    "category": "correct_no_change",
+    "description": "Correct water boils"
+  },
+  {
+    "id": 166,
+    "input": "They have been living here for a decade.",
+    "expected": "They have been living here for a decade.",
+    "category": "correct_no_change",
+    "description": "Correct they have"
+  },
+  {
+    "id": 167,
+    "input": "She reads books in her spare time.",
+    "expected": "She reads books in her spare time.",
+    "category": "correct_no_change",
+    "description": "Correct she reads"
+  },
+  {
+    "id": 168,
+    "input": "He works hard to achieve his dreams.",
+    "expected": "He works hard to achieve his dreams.",
+    "category": "correct_no_change",
+    "description": "Correct he works"
+  },
+  {
+    "id": 169,
+    "input": "The train leaves the station at ten.",
+    "expected": "The train leaves the station at ten.",
+    "category": "correct_no_change",
+    "description": "Correct train leaves"
+  },
+  {
+    "id": 170,
+    "input": "Birds build nests in tall trees.",
+    "expected": "Birds build nests in tall trees.",
+    "category": "correct_no_change",
+    "description": "Correct birds build"
+  },
+  {
+    "id": 171,
+    "input": "He went to the market yesterday.",
+    "expected": "He went to the market yesterday.",
+    "category": "past_tense",
+    "description": "Correct past went preserved"
+  },
+  {
+    "id": 172,
+    "input": "She ate dinner with her family.",
+    "expected": "She ate dinner with her family.",
+    "category": "past_tense",
+    "description": "Correct past ate preserved"
+  },
+  {
+    "id": 173,
+    "input": "They wrote several letters to the editor.",
+    "expected": "They wrote several letters to the editor.",
+    "category": "past_tense",
+    "description": "Correct past wrote preserved"
+  },
+  {
+    "id": 174,
+    "input": "He saw a beautiful rainbow after the rain.",
+    "expected": "He saw a beautiful rainbow after the rain.",
+    "category": "past_tense",
+    "description": "Correct past saw preserved"
+  },
+  {
+    "id": 175,
+    "input": "She spoke to the manager about the issue.",
+    "expected": "She spoke to the manager about the issue.",
+    "category": "past_tense",
+    "description": "Correct past spoke preserved"
+  },
+  {
+    "id": 176,
+    "input": "Microsoft develops software applications.",
+    "expected": "Microsoft develops software applications.",
+    "category": "proper_nouns",
+    "description": "Proper noun Microsoft"
+  },
+  {
+    "id": 177,
+    "input": "Google provides internet services.",
+    "expected": "Google provides internet services.",
+    "category": "proper_nouns",
+    "description": "Proper noun Google"
+  },
+  {
+    "id": 178,
+    "input": "He said, \"I go to school every morning.\"",
+    "expected": "He said, \"I go to school every morning.\"",
+    "category": "quotes_protection",
+    "description": "Quoted text preserved verbatim"
+  },
+  {
+    "id": 179,
+    "input": "She shouted, \"They goes to church!\"",
+    "expected": "She shouted, \"They goes to church!\"",
+    "category": "quotes_protection",
+    "description": "Quoted text shielded from edits"
+  },
+  {
+    "id": 180,
+    "input": "He lives in an apartment downtown.",
+    "expected": "He lives in an apartment downtown.",
+    "category": "correct_no_change",
+    "description": "Correct an apartment"
+  },
+  {
+    "id": 181,
+    "input": "She arrived to the airport at five.",
+    "expected": "She arrived at the airport at five.",
+    "category": "preposition",
+    "description": "arrive to -> arrive at"
+  },
+  {
+    "id": 182,
+    "input": "Success depends of your hard work.",
+    "expected": "Success depends on your hard work.",
+    "category": "preposition",
+    "description": "depends of -> depends on"
+  },
+  {
+    "id": 183,
+    "input": "He is interested for learning coding.",
+    "expected": "He is interested in learning coding.",
+    "category": "preposition",
+    "description": "interested for -> interested in"
+  },
+  {
+    "id": 184,
+    "input": "She is very good in mathematics.",
+    "expected": "She is very good at mathematics.",
+    "category": "preposition",
+    "description": "good in -> good at"
+  },
+  {
+    "id": 185,
+    "input": "Listen at the instructions carefully.",
+    "expected": "Listen to the instructions carefully.",
+    "category": "preposition",
+    "description": "listen at -> listen to"
+  },
+  {
+    "id": 186,
+    "input": "Between you and I, this is a bad idea.",
+    "expected": "Between you and me, this is a bad idea.",
+    "category": "pronoun_case",
+    "description": "between you and I -> between you and me"
+  },
+  {
+    "id": 187,
+    "input": "Him and I went to the store.",
+    "expected": "He and I went to the store.",
+    "category": "pronoun_case",
+    "description": "Him and I -> He and I"
+  },
+  {
+    "id": 188,
+    "input": "Give the books to she.",
+    "expected": "Give the books to her.",
+    "category": "pronoun_case",
+    "description": "to she -> to her"
+  },
+  {
+    "id": 189,
+    "input": "I do not have no money left.",
+    "expected": "I do not have any money left.",
+    "category": "double_negative",
+    "description": "double negative: no -> any"
+  },
+  {
+    "id": 190,
+    "input": "She is more taller than her sister.",
+    "expected": "She is taller than her sister.",
+    "category": "double_comparative",
+    "description": "double comparative: more taller -> taller"
+  },
+  {
+    "id": 191,
+    "input": "Neither of the boys have finished their lunch.",
+    "expected": "Neither of the boys has finished their lunch.",
+    "category": "subject_verb_agreement",
+    "description": "Neither has"
+  },
+  {
+    "id": 192,
+    "input": "Each of the students have a laptop.",
+    "expected": "Each of the students has a laptop.",
+    "category": "subject_verb_agreement",
+    "description": "Each has"
+  },
+  {
+    "id": 193,
+    "input": "Every person deserve respect.",
+    "expected": "Every person deserves respect.",
+    "category": "subject_verb_agreement",
+    "description": "Every person deserves"
+  },
+  {
+    "id": 194,
+    "input": "The news are very shocking.",
+    "expected": "The news is very shocking.",
+    "category": "subject_verb_agreement",
+    "description": "The news is (singular)"
+  },
+  {
+    "id": 195,
+    "input": "Physics are my favorite subject.",
+    "expected": "Physics is my favorite subject.",
+    "category": "subject_verb_agreement",
+    "description": "Physics is (singular subject)"
+  },
+  {
+    "id": 196,
+    "input": "Ten kilometers are a long distance to walk.",
+    "expected": "Ten kilometers is a long distance to walk.",
+    "category": "subject_verb_agreement",
+    "description": "Unit of distance is singular"
+  },
+  {
+    "id": 197,
+    "input": "Two hours are enough time to finish the exam.",
+    "expected": "Two hours is enough time to finish the exam.",
+    "category": "subject_verb_agreement",
+    "description": "Unit of time is singular"
+  },
+  {
+    "id": 198,
+    "input": "The scissors is in the top drawer.",
+    "expected": "The scissors are in the top drawer.",
+    "category": "subject_verb_agreement",
+    "description": "scissors are (plural)"
+  },
+  {
+    "id": 199,
+    "input": "Her trousers is made of cotton.",
+    "expected": "Her trousers are made of cotton.",
+    "category": "subject_verb_agreement",
+    "description": "trousers are (plural)"
+  },
+  {
+    "id": 200,
+    "input": "The police is investigating the incident.",
+    "expected": "The police are investigating the incident.",
+    "category": "subject_verb_agreement",
+    "description": "police are (collective plural)"
+  }
+]

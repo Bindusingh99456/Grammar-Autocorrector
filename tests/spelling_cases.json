@@ -1,0 +1,1052 @@
+[
+  {
+    "id": 1,
+    "input": "This is definately the best solution.",
+    "expected": "This is definitely the best solution.",
+    "type": "typo",
+    "description": "definately -> definitely"
+  },
+  {
+    "id": 2,
+    "input": "The hotel can accomodate all guests.",
+    "expected": "The hotel can accommodate all guests.",
+    "type": "typo",
+    "description": "accomodate -> accommodate"
+  },
+  {
+    "id": 3,
+    "input": "We need to keep the two groups seperate.",
+    "expected": "We need to keep the two groups separate.",
+    "type": "typo",
+    "description": "seperate -> separate"
+  },
+  {
+    "id": 4,
+    "input": "Did you recieve my email yesterday?",
+    "expected": "Did you receive my email yesterday?",
+    "type": "typo",
+    "description": "recieve -> receive"
+  },
+  {
+    "id": 5,
+    "input": "Hard work is neccessary for success.",
+    "expected": "Hard work is necessary for success.",
+    "type": "typo",
+    "description": "neccessary -> necessary"
+  },
+  {
+    "id": 6,
+    "input": "Protecting the enviroment is important.",
+    "expected": "Protecting the environment is important.",
+    "type": "typo",
+    "description": "enviroment -> environment"
+  },
+  {
+    "id": 7,
+    "input": "The goverment announced a new policy.",
+    "expected": "The government announced a new policy.",
+    "type": "typo",
+    "description": "goverment -> government"
+  },
+  {
+    "id": 8,
+    "input": "This is just the begining of the story.",
+    "expected": "This is just the beginning of the story.",
+    "type": "typo",
+    "description": "begining -> beginning"
+  },
+  {
+    "id": 9,
+    "input": "Please check the train schedual.",
+    "expected": "Please check the train schedule.",
+    "type": "typo",
+    "description": "schedual -> schedule"
+  },
+  {
+    "id": 10,
+    "input": "We will leave tommorow morning.",
+    "expected": "We will leave tomorrow morning.",
+    "type": "typo",
+    "description": "tommorow -> tomorrow"
+  },
+  {
+    "id": 11,
+    "input": "Wait untill the light turns green.",
+    "expected": "Wait until the light turns green.",
+    "type": "typo",
+    "description": "untill -> until"
+  },
+  {
+    "id": 12,
+    "input": "She will acheive all her goals.",
+    "expected": "She will achieve all her goals.",
+    "type": "typo",
+    "description": "acheive -> achieve"
+  },
+  {
+    "id": 13,
+    "input": "I beleive you can do it.",
+    "expected": "I believe you can do it.",
+    "type": "typo",
+    "description": "beleive -> believe"
+  },
+  {
+    "id": 14,
+    "input": "That was a wierd situation.",
+    "expected": "That was a weird situation.",
+    "type": "typo",
+    "description": "wierd -> weird"
+  },
+  {
+    "id": 15,
+    "input": "She speaks three foriegn languages.",
+    "expected": "She speaks three foreign languages.",
+    "type": "typo",
+    "description": "foriegn -> foreign"
+  },
+  {
+    "id": 16,
+    "input": "It was a strange occurance.",
+    "expected": "It was a strange occurrence.",
+    "type": "typo",
+    "description": "occurance -> occurrence"
+  },
+  {
+    "id": 17,
+    "input": "He is my best freind.",
+    "expected": "He is my best friend.",
+    "type": "typo",
+    "description": "freind -> friend"
+  },
+  {
+    "id": 18,
+    "input": "She felt a sense of embarassment.",
+    "expected": "She felt a sense of embarrassment.",
+    "type": "typo",
+    "description": "embarassment -> embarrassment"
+  },
+  {
+    "id": 19,
+    "input": "I am truly gratefull for your help.",
+    "expected": "I am truly grateful for your help.",
+    "type": "typo",
+    "description": "gratefull -> grateful"
+  },
+  {
+    "id": 20,
+    "input": "It is a priviledge to meet you.",
+    "expected": "It is a privilege to meet you.",
+    "type": "typo",
+    "description": "priviledge -> privilege"
+  },
+  {
+    "id": 21,
+    "input": "The project was very successfull.",
+    "expected": "The project was very successful.",
+    "type": "typo",
+    "description": "successfull -> successful"
+  },
+  {
+    "id": 22,
+    "input": "She wore a beautifull dress.",
+    "expected": "She wore a beautiful dress.",
+    "type": "typo",
+    "description": "beautifull -> beautiful"
+  },
+  {
+    "id": 23,
+    "input": "Be carefull when crossing the street.",
+    "expected": "Be careful when crossing the street.",
+    "type": "typo",
+    "description": "carefull -> careful"
+  },
+  {
+    "id": 24,
+    "input": "We hopefull that things will improve.",
+    "expected": "We hopeful that things will improve.",
+    "type": "typo",
+    "description": "hopefull -> hopeful"
+  },
+  {
+    "id": 25,
+    "input": "He has a lot of buisness experience.",
+    "expected": "He has a lot of business experience.",
+    "type": "typo",
+    "description": "buisness -> business"
+  },
+  {
+    "id": 26,
+    "input": "Mark the date on your calender.",
+    "expected": "Mark the date on your calendar.",
+    "type": "typo",
+    "description": "calender -> calendar"
+  },
+  {
+    "id": 27,
+    "input": "Choose a catagory from the list.",
+    "expected": "Choose a category from the list.",
+    "type": "typo",
+    "description": "catagory -> category"
+  },
+  {
+    "id": 28,
+    "input": "He spoke with his collegue yesterday.",
+    "expected": "He spoke with his colleague yesterday.",
+    "type": "typo",
+    "description": "collegue -> colleague"
+  },
+  {
+    "id": 29,
+    "input": "They are comming to our house.",
+    "expected": "They are coming to our house.",
+    "type": "typo",
+    "description": "comming -> coming"
+  },
+  {
+    "id": 30,
+    "input": "The commitee approved the budget.",
+    "expected": "The committee approved the budget.",
+    "type": "typo",
+    "description": "commitee -> committee"
+  },
+  {
+    "id": 31,
+    "input": "I completly agree with your opinion.",
+    "expected": "I completely agree with your opinion.",
+    "type": "typo",
+    "description": "completly -> completely"
+  },
+  {
+    "id": 32,
+    "input": "The fog began to dissapear slowly.",
+    "expected": "The fog began to disappear slowly.",
+    "type": "typo",
+    "description": "dissapear -> disappear"
+  },
+  {
+    "id": 33,
+    "input": "Do not dissapoint your parents.",
+    "expected": "Do not disappoint your parents.",
+    "type": "typo",
+    "description": "dissapoint -> disappoint"
+  },
+  {
+    "id": 34,
+    "input": "We finaly reached the summit.",
+    "expected": "We finally reached the summit.",
+    "type": "typo",
+    "description": "finaly -> finally"
+  },
+  {
+    "id": 35,
+    "input": "Step foward when your name is called.",
+    "expected": "Step forward when your name is called.",
+    "type": "typo",
+    "description": "foward -> forward"
+  },
+  {
+    "id": 36,
+    "input": "We need futher information on this.",
+    "expected": "We need further information on this.",
+    "type": "typo",
+    "description": "futher -> further"
+  },
+  {
+    "id": 37,
+    "input": "Good grammer is essential for clear writing.",
+    "expected": "Good grammar is essential for clear writing.",
+    "type": "typo",
+    "description": "grammer -> grammar"
+  },
+  {
+    "id": 38,
+    "input": "We garantee full customer satisfaction.",
+    "expected": "We guarantee full customer satisfaction.",
+    "type": "typo",
+    "description": "garantee -> guarantee"
+  },
+  {
+    "id": 39,
+    "input": "Thank you for your valuable guidence.",
+    "expected": "Thank you for your valuable guidance.",
+    "type": "typo",
+    "description": "guidence -> guidance"
+  },
+  {
+    "id": 40,
+    "input": "What happend last night?",
+    "expected": "What happened last night?",
+    "type": "typo",
+    "description": "happend -> happened"
+  },
+  {
+    "id": 41,
+    "input": "Please give me teh book on the desk.",
+    "expected": "Please give me the book on the desk.",
+    "type": "typo",
+    "description": "teh -> the"
+  },
+  {
+    "id": 42,
+    "input": "I like bread adn butter for breakfast.",
+    "expected": "I like bread and butter for breakfast.",
+    "type": "typo",
+    "description": "adn -> and"
+  },
+  {
+    "id": 43,
+    "input": "She came wiht her younger sister.",
+    "expected": "She came with her younger sister.",
+    "type": "typo",
+    "description": "wiht -> with"
+  },
+  {
+    "id": 44,
+    "input": "I bought a gift fro my mother.",
+    "expected": "I bought a gift for my mother.",
+    "type": "typo",
+    "description": "fro -> for"
+  },
+  {
+    "id": 45,
+    "input": "I know taht you are right.",
+    "expected": "I know that you are right.",
+    "type": "typo",
+    "description": "taht -> that"
+  },
+  {
+    "id": 46,
+    "input": "We stayed home becuase it was raining.",
+    "expected": "We stayed home because it was raining.",
+    "type": "typo",
+    "description": "becuase -> because"
+  },
+  {
+    "id": 47,
+    "input": "I woudl like a cup of tea.",
+    "expected": "I would like a cup of tea.",
+    "type": "typo",
+    "description": "woudl -> would"
+  },
+  {
+    "id": 48,
+    "input": "She colud not find her glasses.",
+    "expected": "She could not find her glasses.",
+    "type": "typo",
+    "description": "colud -> could"
+  },
+  {
+    "id": 49,
+    "input": "You shoudl finish your homework first.",
+    "expected": "You should finish your homework first.",
+    "type": "typo",
+    "description": "shoudl -> should"
+  },
+  {
+    "id": 50,
+    "input": "This is an important thign to remember.",
+    "expected": "This is an important thing to remember.",
+    "type": "typo",
+    "description": "thign -> thing"
+  },
+  {
+    "id": 51,
+    "input": "Look at tehse beautiful flowers.",
+    "expected": "Look at these beautiful flowers.",
+    "type": "typo",
+    "description": "tehse -> these"
+  },
+  {
+    "id": 52,
+    "input": "I like thsoe blue shoes better.",
+    "expected": "I like those blue shoes better.",
+    "type": "typo",
+    "description": "thsoe -> those"
+  },
+  {
+    "id": 53,
+    "input": "I have alot of books in my room.",
+    "expected": "I have a lot of books in my room.",
+    "type": "typo",
+    "description": "alot -> a lot"
+  },
+  {
+    "id": 54,
+    "input": "Noone showed up for the morning meeting.",
+    "expected": "No one showed up for the morning meeting.",
+    "type": "typo",
+    "description": "noone -> no one"
+  },
+  {
+    "id": 55,
+    "input": "I cant believe how fast time flies.",
+    "expected": "I can't believe how fast time flies.",
+    "type": "typo",
+    "description": "cant -> can't"
+  },
+  {
+    "id": 56,
+    "input": "I dont know the answer to this question.",
+    "expected": "I don't know the answer to this question.",
+    "type": "typo",
+    "description": "dont -> don't"
+  },
+  {
+    "id": 57,
+    "input": "She wont be able to come today.",
+    "expected": "She won't be able to come today.",
+    "type": "typo",
+    "description": "wont -> won't"
+  },
+  {
+    "id": 58,
+    "input": "He didnt attend the class yesterday.",
+    "expected": "He didn't attend the class yesterday.",
+    "type": "typo",
+    "description": "didnt -> didn't"
+  },
+  {
+    "id": 59,
+    "input": "She doesnt like spicy food.",
+    "expected": "She doesn't like spicy food.",
+    "type": "typo",
+    "description": "doesnt -> doesn't"
+  },
+  {
+    "id": 60,
+    "input": "He allways arrives on time.",
+    "expected": "He always arrives on time.",
+    "type": "typo",
+    "description": "allways -> always"
+  },
+  {
+    "id": 61,
+    "input": "Dinner is allmost ready.",
+    "expected": "Dinner is almost ready.",
+    "type": "typo",
+    "description": "allmost -> almost"
+  },
+  {
+    "id": 62,
+    "input": "I have allready finished the report.",
+    "expected": "I have already finished the report.",
+    "type": "typo",
+    "description": "allready -> already"
+  },
+  {
+    "id": 63,
+    "input": "She was born in a differnt country.",
+    "expected": "She was born in a different country.",
+    "type": "typo",
+    "description": "differnt -> different"
+  },
+  {
+    "id": 64,
+    "input": "The music has a fast rythm.",
+    "expected": "The music has a fast rhythm.",
+    "type": "typo",
+    "description": "rythm -> rhythm"
+  },
+  {
+    "id": 65,
+    "input": "What a pleasant suprise this is.",
+    "expected": "What a pleasant surprise this is.",
+    "type": "typo",
+    "description": "suprise -> surprise"
+  },
+  {
+    "id": 66,
+    "input": "We studied together in the libary.",
+    "expected": "We studied together in the library.",
+    "type": "typo",
+    "description": "libary -> library"
+  },
+  {
+    "id": 67,
+    "input": "Work on your English pronounciation.",
+    "expected": "Work on your English pronunciation.",
+    "type": "typo",
+    "description": "pronounciation -> pronunciation"
+  },
+  {
+    "id": 68,
+    "input": "He has a lot of knowlege about history.",
+    "expected": "He has a lot of knowledge about history.",
+    "type": "typo",
+    "description": "knowlege -> knowledge"
+  },
+  {
+    "id": 69,
+    "input": "Do not interupt the speaker.",
+    "expected": "Do not interrupt the speaker.",
+    "type": "typo",
+    "description": "interupt -> interrupt"
+  },
+  {
+    "id": 70,
+    "input": "This is a very intresting book.",
+    "expected": "This is a very interesting book.",
+    "type": "typo",
+    "description": "intresting -> interesting"
+  },
+  {
+    "id": 71,
+    "input": "Call me immediatly after you arrive.",
+    "expected": "Call me immediately after you arrive.",
+    "type": "typo",
+    "description": "immediatly -> immediately"
+  },
+  {
+    "id": 72,
+    "input": "She is an independant researcher.",
+    "expected": "She is an independent researcher.",
+    "type": "typo",
+    "description": "independant -> independent"
+  },
+  {
+    "id": 73,
+    "input": "He is an amateur astronomer.",
+    "expected": "He is an amateur astronomer.",
+    "type": "typo",
+    "description": "astronomer -> astronomer"
+  },
+  {
+    "id": 74,
+    "input": "Please provide a valid reciept.",
+    "expected": "Please provide a valid receipt.",
+    "type": "typo",
+    "description": "reciept -> receipt"
+  },
+  {
+    "id": 75,
+    "input": "I highly recommed this novel.",
+    "expected": "I highly recommend this novel.",
+    "type": "typo",
+    "description": "recommed -> recommend"
+  },
+  {
+    "id": 76,
+    "input": "Their going to the beach this afternoon.",
+    "expected": "They're going to the beach this afternoon.",
+    "type": "confusable",
+    "description": "Their -> They're"
+  },
+  {
+    "id": 77,
+    "input": "Put the books over their.",
+    "expected": "Put the books over there.",
+    "type": "confusable",
+    "description": "their -> there"
+  },
+  {
+    "id": 78,
+    "input": "They left there backpacks in the car.",
+    "expected": "They left their backpacks in the car.",
+    "type": "confusable",
+    "description": "there -> their"
+  },
+  {
+    "id": 79,
+    "input": "Your the best student in this class.",
+    "expected": "You're the best student in this class.",
+    "type": "confusable",
+    "description": "Your -> You're"
+  },
+  {
+    "id": 80,
+    "input": "Do not forget you're passport before leaving.",
+    "expected": "Do not forget your passport before leaving.",
+    "type": "confusable",
+    "description": "you're -> your"
+  },
+  {
+    "id": 81,
+    "input": "The cat licked it's paw after eating.",
+    "expected": "The cat licked its paw after eating.",
+    "type": "confusable",
+    "description": "it's -> its"
+  },
+  {
+    "id": 82,
+    "input": "Its raining very heavily outside.",
+    "expected": "It's raining very heavily outside.",
+    "type": "confusable",
+    "description": "Its -> It's"
+  },
+  {
+    "id": 83,
+    "input": "I would rather walk then take the crowded bus.",
+    "expected": "I would rather walk than take the crowded bus.",
+    "type": "confusable",
+    "description": "then -> than"
+  },
+  {
+    "id": 84,
+    "input": "We ate dinner and than watched a movie.",
+    "expected": "We ate dinner and then watched a movie.",
+    "type": "confusable",
+    "description": "than -> then"
+  },
+  {
+    "id": 85,
+    "input": "This coffee is to hot to drink right now.",
+    "expected": "This coffee is too hot to drink right now.",
+    "type": "confusable",
+    "description": "to -> too"
+  },
+  {
+    "id": 86,
+    "input": "I want to go to the park to.",
+    "expected": "I want to go to the park too.",
+    "type": "confusable",
+    "description": "to -> too"
+  },
+  {
+    "id": 87,
+    "input": "She has to cats and a golden dog.",
+    "expected": "She has two cats and a golden dog.",
+    "type": "confusable",
+    "description": "to -> two"
+  },
+  {
+    "id": 88,
+    "input": "Lack of sleep will effect your exam performance.",
+    "expected": "Lack of sleep will affect your exam performance.",
+    "type": "confusable",
+    "description": "effect -> affect"
+  },
+  {
+    "id": 89,
+    "input": "The medicine had an immediate affect on the pain.",
+    "expected": "The medicine had an immediate effect on the pain.",
+    "type": "confusable",
+    "description": "affect -> effect"
+  },
+  {
+    "id": 90,
+    "input": "Make sure you do not loose your keys.",
+    "expected": "Make sure you do not lose your keys.",
+    "type": "confusable",
+    "description": "loose -> lose"
+  },
+  {
+    "id": 91,
+    "input": "The screw on the chair is lose.",
+    "expected": "The screw on the chair is loose.",
+    "type": "confusable",
+    "description": "lose -> loose"
+  },
+  {
+    "id": 92,
+    "input": "Who's jacket was left in the classroom?",
+    "expected": "Whose jacket was left in the classroom?",
+    "type": "confusable",
+    "description": "Who's -> Whose"
+  },
+  {
+    "id": 93,
+    "input": "Whose knocking on the front door?",
+    "expected": "Who's knocking on the front door?",
+    "type": "confusable",
+    "description": "Whose -> Who's"
+  },
+  {
+    "id": 94,
+    "input": "I will accept all the terms except the last one.",
+    "expected": "I will accept all the terms except the last one.",
+    "type": "confusable",
+    "description": "accept/except correct"
+  },
+  {
+    "id": 95,
+    "input": "Everyone came accept John.",
+    "expected": "Everyone came except John.",
+    "type": "confusable",
+    "description": "accept -> except"
+  },
+  {
+    "id": 96,
+    "input": "Please advise me on the best career path.",
+    "expected": "Please advise me on the best career path.",
+    "type": "confusable",
+    "description": "advise verb correct"
+  },
+  {
+    "id": 97,
+    "input": "She gave me some very good advise.",
+    "expected": "She gave me some very good advice.",
+    "type": "confusable",
+    "description": "advise -> advice noun"
+  },
+  {
+    "id": 98,
+    "input": "The principal reason for the delay was heavy rain.",
+    "expected": "The principal reason for the delay was heavy rain.",
+    "type": "confusable",
+    "description": "principal adjective"
+  },
+  {
+    "id": 99,
+    "input": "He stands firmly by his moral principals.",
+    "expected": "He stands firmly by his moral principles.",
+    "type": "confusable",
+    "description": "principals -> principles"
+  },
+  {
+    "id": 100,
+    "input": "I bought some new envelopes and stationary.",
+    "expected": "I bought some new envelopes and stationery.",
+    "type": "confusable",
+    "description": "stationary -> stationery"
+  },
+  {
+    "id": 101,
+    "input": "The exercise bike remained stationery in the gym.",
+    "expected": "The exercise bike remained stationary in the gym.",
+    "type": "confusable",
+    "description": "stationery -> stationary"
+  },
+  {
+    "id": 102,
+    "input": "I do not know weather he will arrive today.",
+    "expected": "I do not know whether he will arrive today.",
+    "type": "confusable",
+    "description": "weather -> whether"
+  },
+  {
+    "id": 103,
+    "input": "The whether in Bangalore is pleasant.",
+    "expected": "The weather in Bangalore is pleasant.",
+    "type": "confusable",
+    "description": "whether -> weather"
+  },
+  {
+    "id": 104,
+    "input": "Please be quiet in the library.",
+    "expected": "Please be quiet in the library.",
+    "type": "confusable",
+    "description": "quiet correct"
+  },
+  {
+    "id": 105,
+    "input": "The test was quite difficult.",
+    "expected": "The test was quite difficult.",
+    "type": "confusable",
+    "description": "quite correct"
+  },
+  {
+    "id": 106,
+    "input": "Please be quite during the examination.",
+    "expected": "Please be quiet during the examination.",
+    "type": "confusable",
+    "description": "quite -> quiet"
+  },
+  {
+    "id": 107,
+    "input": "The guide lead us safely through the mountain pass.",
+    "expected": "The guide led us safely through the mountain pass.",
+    "type": "confusable",
+    "description": "lead -> led past"
+  },
+  {
+    "id": 108,
+    "input": "Press the brake to stop the car.",
+    "expected": "Press the brake to stop the car.",
+    "type": "confusable",
+    "description": "brake vehicle"
+  },
+  {
+    "id": 109,
+    "input": "Be careful not to brake the fragile glass.",
+    "expected": "Be careful not to break the fragile glass.",
+    "type": "confusable",
+    "description": "brake -> break"
+  },
+  {
+    "id": 110,
+    "input": "All nations long for world piece.",
+    "expected": "All nations long for world peace.",
+    "type": "confusable",
+    "description": "piece -> peace"
+  },
+  {
+    "id": 111,
+    "input": "May I have another peace of cake?",
+    "expected": "May I have another piece of cake?",
+    "type": "confusable",
+    "description": "peace -> piece"
+  },
+  {
+    "id": 112,
+    "input": "He walked across the room with bare feet.",
+    "expected": "He walked across the room with bare feet.",
+    "type": "confusable",
+    "description": "bare correct"
+  },
+  {
+    "id": 113,
+    "input": "I cannot bear the extreme cold.",
+    "expected": "I cannot bear the extreme cold.",
+    "type": "confusable",
+    "description": "bear endure"
+  },
+  {
+    "id": 114,
+    "input": "Students are not aloud to speak during tests.",
+    "expected": "Students are not allowed to speak during tests.",
+    "type": "confusable",
+    "description": "aloud -> allowed"
+  },
+  {
+    "id": 115,
+    "input": "She read the poem allowed to the class.",
+    "expected": "She read the poem aloud to the class.",
+    "type": "confusable",
+    "description": "allowed -> aloud"
+  },
+  {
+    "id": 116,
+    "input": "We had delicious chocolate desert after dinner.",
+    "expected": "We had delicious chocolate dessert after dinner.",
+    "type": "confusable",
+    "description": "desert -> dessert"
+  },
+  {
+    "id": 117,
+    "input": "Camels can survive long journeys in the dessert.",
+    "expected": "Camels can survive long journeys in the desert.",
+    "type": "confusable",
+    "description": "dessert -> desert"
+  },
+  {
+    "id": 118,
+    "input": "The construction sight is closed to visitors.",
+    "expected": "The construction site is closed to visitors.",
+    "type": "confusable",
+    "description": "sight -> site"
+  },
+  {
+    "id": 119,
+    "input": "The sunset was a breathtaking site.",
+    "expected": "The sunset was a breathtaking sight.",
+    "type": "confusable",
+    "description": "site -> sight"
+  },
+  {
+    "id": 120,
+    "input": "We walked passed the old post office.",
+    "expected": "We walked past the old post office.",
+    "type": "confusable",
+    "description": "passed -> past"
+  },
+  {
+    "id": 121,
+    "input": "He past his driving test on the first attempt.",
+    "expected": "He passed his driving test on the first attempt.",
+    "type": "confusable",
+    "description": "past -> passed"
+  },
+  {
+    "id": 122,
+    "input": "The wine compliments the grilled salmon well.",
+    "expected": "The wine complements the grilled salmon well.",
+    "type": "confusable",
+    "description": "compliments -> complements"
+  },
+  {
+    "id": 123,
+    "input": "She gave him a very nice compliment.",
+    "expected": "She gave him a very nice compliment.",
+    "type": "confusable",
+    "description": "compliment praise"
+  },
+  {
+    "id": 124,
+    "input": "I need to buy some groceries today.",
+    "expected": "I need to buy some groceries today.",
+    "type": "confusable",
+    "description": "buy purchase"
+  },
+  {
+    "id": 125,
+    "input": "The book was written by a famous author.",
+    "expected": "The book was written by a famous author.",
+    "type": "confusable",
+    "description": "by agent"
+  },
+  {
+    "id": 126,
+    "input": "Please stand buy me when things get difficult.",
+    "expected": "Please stand by me when things get difficult.",
+    "type": "confusable",
+    "description": "buy -> by"
+  },
+  {
+    "id": 127,
+    "input": "I know there is know easy way out.",
+    "expected": "I know there is no easy way out.",
+    "type": "confusable",
+    "description": "know -> no"
+  },
+  {
+    "id": 128,
+    "input": "She bought a brand knew bicycle.",
+    "expected": "She bought a brand new bicycle.",
+    "type": "confusable",
+    "description": "knew -> new"
+  },
+  {
+    "id": 129,
+    "input": "He new the secret all along.",
+    "expected": "He knew the secret all along.",
+    "type": "confusable",
+    "description": "new -> knew"
+  },
+  {
+    "id": 130,
+    "input": "Make sure you write with your write hand.",
+    "expected": "Make sure you write with your right hand.",
+    "type": "confusable",
+    "description": "write -> right hand"
+  },
+  {
+    "id": 131,
+    "input": "The dog dug a deep whole in the garden.",
+    "expected": "The dog dug a deep hole in the garden.",
+    "type": "confusable",
+    "description": "whole -> hole"
+  },
+  {
+    "id": 132,
+    "input": "She ate the hole pizza by herself.",
+    "expected": "She ate the whole pizza by herself.",
+    "type": "confusable",
+    "description": "hole -> whole"
+  },
+  {
+    "id": 133,
+    "input": "Vegetarians do not eat meat.",
+    "expected": "Vegetarians do not eat meat.",
+    "type": "confusable",
+    "description": "meat food"
+  },
+  {
+    "id": 134,
+    "input": "Let us meat at the coffee shop at noon.",
+    "expected": "Let us meet at the coffee shop at noon.",
+    "type": "confusable",
+    "description": "meat -> meet"
+  },
+  {
+    "id": 135,
+    "input": "The plane landed safely on the runway.",
+    "expected": "The plane landed safely on the runway.",
+    "type": "confusable",
+    "description": "plane aircraft"
+  },
+  {
+    "id": 136,
+    "input": "She prefers to wear plain cotton shirts.",
+    "expected": "She prefers to wear plain cotton shirts.",
+    "type": "confusable",
+    "description": "plain simple"
+  },
+  {
+    "id": 137,
+    "input": "He tripped on the bottom stair.",
+    "expected": "He tripped on the bottom stair.",
+    "type": "confusable",
+    "description": "stair step"
+  },
+  {
+    "id": 138,
+    "input": "It is rude to stair at strangers.",
+    "expected": "It is rude to stare at strangers.",
+    "type": "confusable",
+    "description": "stair -> stare"
+  },
+  {
+    "id": 139,
+    "input": "Do not waist your valuable time on games.",
+    "expected": "Do not waste your valuable time on games.",
+    "type": "confusable",
+    "description": "waist -> waste"
+  },
+  {
+    "id": 140,
+    "input": "The leather belt fits snugly around his waste.",
+    "expected": "The leather belt fits snugly around his waist.",
+    "type": "confusable",
+    "description": "waste -> waist"
+  },
+  {
+    "id": 141,
+    "input": "Please weight for me outside the cinema.",
+    "expected": "Please wait for me outside the cinema.",
+    "type": "confusable",
+    "description": "weight -> wait"
+  },
+  {
+    "id": 142,
+    "input": "The total wait of the luggage was twenty kilos.",
+    "expected": "The total weight of the luggage was twenty kilos.",
+    "type": "confusable",
+    "description": "wait -> weight"
+  },
+  {
+    "id": 143,
+    "input": "The sailor used coarse language.",
+    "expected": "The sailor used coarse language.",
+    "type": "confusable",
+    "description": "coarse rough"
+  },
+  {
+    "id": 144,
+    "input": "Of coarse I will help you with the project.",
+    "expected": "Of course I will help you with the project.",
+    "type": "confusable",
+    "description": "coarse -> course"
+  },
+  {
+    "id": 145,
+    "input": "The cheese grader is in the kitchen drawer.",
+    "expected": "The cheese grater is in the kitchen drawer.",
+    "type": "confusable",
+    "description": "grader -> grater"
+  },
+  {
+    "id": 146,
+    "input": "Today we will learn a new grammar lesson.",
+    "expected": "Today we will learn a new grammar lesson.",
+    "type": "confusable",
+    "description": "lesson class"
+  },
+  {
+    "id": 147,
+    "input": "The medicine helped lessen the severe pain.",
+    "expected": "The medicine helped lessen the severe pain.",
+    "type": "confusable",
+    "description": "lessen reduce"
+  },
+  {
+    "id": 148,
+    "input": "Did you check the morning male today?",
+    "expected": "Did you check the morning mail today?",
+    "type": "confusable",
+    "description": "male -> mail"
+  },
+  {
+    "id": 149,
+    "input": "The movie scene was shot in London.",
+    "expected": "The movie scene was shot in London.",
+    "type": "confusable",
+    "description": "scene location"
+  },
+  {
+    "id": 150,
+    "input": "Have you scene my red notebook anywhere?",
+    "expected": "Have you seen my red notebook anywhere?",
+    "type": "confusable",
+    "description": "scene -> seen"
+  }
+]

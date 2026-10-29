@@ -1,0 +1,10 @@
+{
+  "model_path": "model/gec-model",
+  "test_file": "data/processed/jfleg_test.json",
+  "total_sentences": 747,
+  "baseline_gleu": 0.7732,
+  "model_gleu": 0.7755,
+  "baseline_share_changed": 0.0,
+  "model_share_changed": 0.5194,
+  "changed_count": 388
+}
